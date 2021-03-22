@@ -1,0 +1,28 @@
+/* modal */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: -6%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    transition: 0.2s;
+}
+.modal__active{
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    position: relative;
+    z-index: 1;
+    margin: 0 10px;
+}
