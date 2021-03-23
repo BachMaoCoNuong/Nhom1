@@ -1,0 +1,36 @@
+/* < 739px */
+@media (max-width: 46.1875em){
+
+}
+/* >= 740px and < 1024px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .navbar__list{
+        display: none;
+    }
+    .navbar__search-login{
+        margin-left: auto;
+    }
+    .search-input{
+        width: 539px;
+    }
+    .search__suggestions{
+        width: 100%;
+    }
+    .navbar__login{
+        display: none;
+    }
+    .navbar__bar{
+        color: var(--text_color-menu);
+        font-size: 1.6rem;
+        transition: 0.2s;
+    }
+    .navbar__bar:hover{
+        color: var(--text_color);
+    }
+}
+/* >= 1024px */
+@media (min-width: 64em){
+    .navbar__bar{
+        display: none;
+    }
+}

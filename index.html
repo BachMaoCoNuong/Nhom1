@@ -11,17 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="app">
         <div class="header">
             <nav class="navbar">
-                <div class="grid wide">
+                <div class="grid wide header__navbar">
+                    <a href="#" class="navbar__link">
+                        <img src="./assets/img/logo/logo1.jpg" alt="" class="navbar__logo">
+                    </a>
                     <div class="header__content">
                         <ul class="navbar__list">
-                            <a href="#" class="navbar__link">
-                                <img src="./assets/img/logo/logo1.jpg" alt="" class="navbar__logo">
-                            </a>
                             <li class="navbar__list-item">
                                 <span>Dịch vụ</span>
                                 <i class="fas fa-angle-down"></i>
@@ -121,7 +122,7 @@
                                 </div>
                             </li>
                             <li class="navbar__list-item">
-                                <span>chúng tôi</span>
+                                <span>Chúng tôi</span>
                                 <i class="fas fa-angle-down"></i>
                                 <div class="grid navbar__list-menu ">
                                     <ul class="row no-gutters list-nav__menu ">
@@ -312,6 +313,7 @@
                                 </ul>
                             </div>
                             <i class="fas fa-user navbar__login"></i>
+                            <i class="fas fa-bars navbar__bar"></i>
                         </div>
                     </div>
                 </div>
@@ -385,7 +387,200 @@
             </div>
         </div>
     </div>
+    <div class="nav-modal__mobile modal__active">
+        <div class="modal__overlay"></div>
+        <div class="modal__body-mobile">
+            <div class="nav__mobile-container">
+                <div class="nav__mobile-header">
+                    <img src="./assets/img/logo/logo1.jpg" alt="" class="navbar__logo-mobile">
+                    <span>TKSR.COM</span>
+                    <i class="fas fa-times auth-form__icon-mobile"></i>
+                </div>
+                <ul class="nav__mobile-list">
+                    <li class="nav__mobile-item">
+                        <div onclick="slide0();" class="nav__m-item__top">
+                            <span>Dịch vụ</span>
+                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                        </div>
+                        <div class="grid nav__m-item__menu">
+                            <ul class="row m-item__menu-list">
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__mobile-item">
+                        <div onclick="slide1();" class="nav__m-item__top">
+                            <span>Chúng tôi</span>
+                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                        </div>
+                        <div class="grid nav__m-item__menu">
+                            <ul class="row m-item__menu-list">
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__mobile-item">
+                        <div onclick="slide2();" class="nav__m-item__top">
+                            <span>Tin tức</span>
+                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                        </div>
+                        <div class="grid nav__m-item__menu">
+                            <ul class="row m-item__menu-list">
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__mobile-item">
+                        <div onclick="slide3();" class="nav__m-item__top">
+                            <span>Trợ giúp</span>
+                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                        </div>
+                        <div class="grid nav__m-item__menu">
+                            <ul class="row m-item__menu-list">
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__mobile-item">
+                        <div onclick="slide4();" class="nav__m-item__top">
+                            <span>Đối tác</span>
+                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                        </div>
+                        <div class="grid nav__m-item__menu">
+                            <ul class="row m-item__menu-list">
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
+                                    <a href="#" class="m-item__menu-link">
+                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
+                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/active.js"></script>
+    <script>
+        const elem = document.querySelectorAll('.nav__m-item__menu');
+        const icon = document.querySelectorAll('.m-item__icon-mobile');
+        function slide1(){
+            elem.classList.toggle('hide__m-menu__mobile');
+            icon.classList.toggle('m-item__icon-up');
+        }
+    </script>
 </body>
+
 </html>

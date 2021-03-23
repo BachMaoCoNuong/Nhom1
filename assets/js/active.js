@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded",function(){
     const icon__close = document.querySelectorAll('.auth-form__icon');
     const modal__overlay = document.querySelector('.modal__overlay');
     const go__register = document.querySelectorAll('.form__go-register');
-    const form__register = document.querySelector('.auth-form__register');
     icon__login.onclick = function(){
         modal.classList.add('modal__active');
         auth__form[0].classList.add('auth-form__active');
@@ -38,4 +37,5 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         }
     }
+    /* slide navbar mobile */
 },false)
