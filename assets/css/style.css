@@ -415,15 +415,22 @@
 .auth-form__rules{
     margin: 0 0 10px 0;
 }
+.navbar__bar{
+    cursor: pointer;
+}
 .nav__mobile-container{
     background-color: var(--background_color-menu);
     width: 644px;
     position: absolute;
-    left: calc(100% - 644px);
+    left: 100%;
     color: var(--text_color-menu);
     font-weight: bold;
     font-size: 1.125rem;
     height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+.nav__mobile-active{
+    left: calc(100% - 644px);
 }
 .navbar__logo-mobile{
     height: 42px;
@@ -450,6 +457,14 @@
 }
 .nav__mobile-list{
     list-style: none;
+    border-bottom: solid 1px var(--color_hover);
+
+}
+.mobile-login__register{
+    padding: 13px 20px;
+    border-top: solid 1px var(--color_hover); 
+    cursor: pointer;
+    transition: 0.1s;
 }
 .nav__m-item__top{
     display: flex;
@@ -459,8 +474,9 @@
     cursor: pointer;
     transition: 0.1s;
 }
-.nav__m-item__top:hover{
+.nav__mobile-item:hover{
     color: var(--text_color);
+    background-color: var(--color_hover);
 }
 .nav__m-item__menu{
     background-color: var(--color_nav_mobile);
@@ -476,13 +492,12 @@
     transform: rotateX(180deg);
 }
 .hide__m-menu__mobile{
-    height: 206px;
     visibility: visible;
 }
 .m-item__menu-list{
+    list-style: none;
     font-size: 14px;
     margin: 0;
-    border-top: 1px solid #eee;
     height: 100%;
 }
 .m-item__menu-item{
@@ -498,6 +513,10 @@
     transition: 0.1s;
     font-weight: 500;
 }
+.nav_mobile-active{
+    color: var(--text_color);
+    background-color: var(--color_hover);
+}
 .m-item__menu-link:hover{
     color: var(--primary_color);
 }
@@ -505,8 +524,6 @@
     width: 20px;
     margin-right: 6px;
 }
-
-
 
 
 

@@ -329,7 +329,7 @@
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <!-- form login -->
-            <div class="auth-form">
+            <div class="auth-form auth-form__login">
                 <div class="auth-form__header">
                     <span>Đăng nhập TKSR</span>
                     <i class="fas fa-times auth-form__icon"></i>
@@ -387,8 +387,8 @@
             </div>
         </div>
     </div>
-    <div class="nav-modal__mobile modal__active">
-        <div class="modal__overlay"></div>
+    <div class="nav-modal__mobile">
+        <div class="modal__overlay-mobile"></div>
         <div class="modal__body-mobile">
             <div class="nav__mobile-container">
                 <div class="nav__mobile-header">
@@ -397,12 +397,18 @@
                     <i class="fas fa-times auth-form__icon-mobile"></i>
                 </div>
                 <ul class="nav__mobile-list">
+                    <li class="nav__mobile-item mobile-login__register login">
+                        <span>Đăng nhập</span>
+                    </li>
+                    <li class="nav__mobile-item mobile-login__register register">
+                        <span>Đăng ký</span>
+                    </li>
                     <li class="nav__mobile-item">
-                        <div onclick="slide0();" class="nav__m-item__top">
+                        <div class="nav__m-item__top" data-slideMobile="0">
                             <span>Dịch vụ</span>
-                        <i class="fas fa-angle-down m-item__icon-mobile"></i>
+                            <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu">
+                        <div class="grid nav__m-item__menu" id="0">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -468,11 +474,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div onclick="slide1();" class="nav__m-item__top">
+                        <div class="nav__m-item__top" data-slideMobile="1">
                             <span>Chúng tôi</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu">
+                        <div class="grid nav__m-item__menu" id="1">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -496,18 +502,12 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div onclick="slide2();" class="nav__m-item__top">
+                        <div class="nav__m-item__top" data-slideMobile="2">
                             <span>Tin tức</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu">
+                        <div class="grid nav__m-item__menu" id="2">
                             <ul class="row m-item__menu-list">
-                                <li class="clo l-6 m-6 c-6 m-item__menu-item">
-                                    <a href="#" class="m-item__menu-link">
-                                        <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
-                                        <span class="nav__mobile-menu-text">Chuyển - nhận tiền</span>
-                                    </a>
-                                </li>
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
                                         <img class="m-item__menu-logo" src="./assets/img/logo/icon1.svg" alt="">
@@ -524,11 +524,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div onclick="slide3();" class="nav__m-item__top">
+                        <div class="nav__m-item__top" data-slideMobile="3">
                             <span>Trợ giúp</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu">
+                        <div class="grid nav__m-item__menu" id="3">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -546,11 +546,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div onclick="slide4();" class="nav__m-item__top">
+                        <div class="nav__m-item__top" data-slideMobile="4">
                             <span>Đối tác</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu">
+                        <div class="grid nav__m-item__menu" id="4">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -573,14 +573,6 @@
     </div>
 
     <script src="./assets/js/active.js"></script>
-    <script>
-        const elem = document.querySelectorAll('.nav__m-item__menu');
-        const icon = document.querySelectorAll('.m-item__icon-mobile');
-        function slide1(){
-            elem.classList.toggle('hide__m-menu__mobile');
-            icon.classList.toggle('m-item__icon-up');
-        }
-    </script>
 </body>
 
 </html>
