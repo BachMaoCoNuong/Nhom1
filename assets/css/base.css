@@ -51,29 +51,10 @@
     background-color: var(--background_color);
 }
 .section__title{
-    padding: 20px 157px 35px 157px;
+    padding: 13px 0px 0px 0px;
 }
 .section__title-text{
     font-size: 1.9rem;
     color: var(--primary_color);
     text-align: center;
-}
-.intro__content-img{
-    width: 300px;
-}
-.intro__item{
-    display: flex;
-    margin-bottom: 30px;
-}
-.intro-item__logo{
-    background-image: url('../img/logo/IntroRound.svg');
-    position: relative;
-    width: 83px;
-    height: 83px;
-}
-.intro-item__logo img{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
 }
