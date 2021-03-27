@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ví Điện Tử TKSR - Siêu Ứng Dụng Thanh Toán số 1 Việt Nam</title>
-    <link rel="icon" href="./assets/img/logo/logo1.jpg" type="image/x-icon">
+    <link rel="icon" href="./assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <div class="grid wide header__navbar">
                     <a href="#" class="navbar__link">
-                        <img src="./assets/img/logo/logo1.jpg" alt="" class="navbar__logo">
+                        <img src="./assets/img/logo/logo.jpg" alt="" class="navbar__logo">
                     </a>
                     <div class="header__content">
                         <ul class="navbar__list">
@@ -408,7 +408,7 @@
                 <div class="grid tienich__tab">
                     <div class="tienich__tab-content">
                         <div class="row no-gutters tienich__tab-list">
-                            <div class="col tienich__tab-item tienich__tab-item__active">
+                            <div class="col tienich__tab-item tienich__tab-item__active" data-slideTienIch="TienIch0">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -416,7 +416,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch1">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -424,7 +424,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch2">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -432,7 +432,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch3">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -440,7 +440,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch4">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -448,7 +448,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch5">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -456,7 +456,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch6">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -464,7 +464,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch7">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -472,7 +472,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch8">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -480,7 +480,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col tienich__tab-item">
+                            <div class="col tienich__tab-item" data-slideTienIch="TienIch9">
                                 <div class="tienich__tab-item__content">
                                     <img src="./assets/img/logo/icon1.svg" alt="" class="tienich__tab-icon">
                                     <span class="tienich__tab-text">
@@ -491,18 +491,996 @@
                         </div>
                     </div>
                 </div>
+                <div class="tienich__patch">
+                    <div class="grid wide tienich__patch-container">
+                        <div class="tienich__patch-container__absolute patch-container__absolute-active" id="TienIch0">
+                            <div class="tienich__part-btn">
+                                    <div class="tienich__part-btn__content">
+                                        <div class="btn btn__tienich btn__tienich-active" data-slideTienIchCon="TienIchCon0">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Vé xem phim</span>
+                                        </div>
+                                        <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon1">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Mua vé số</span>
+                                        </div>
+                                        <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon2">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Karaoke</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="grid tienich__box">
+                                    <div class="row tienich__box-content tienich__box-content__active" id="TienIchCon0">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Đặt vé xem phim trên ví TKSR
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Đặt vé ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch1.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                    </div>
+                                    <div class="row tienich__box-content" id="TienIchCon1">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                    </div>
+                                    <div class="row tienich__box-content" id="TienIchCon2">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán Karaoke
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Đặt vé ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch3.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="tienich__patch-container__absolute" id="TienIch1">
+                            <div class="tienich__part-btn">
+                                <div class="tienich__part-btn__content">
+                                    <div class="btn btn__tienich btn__tienich-active" data-slideTienIchCon="TienIchCon3">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Trái Tim tksr</span>
+                                    </div>
+                                    <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon4">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Heo Đất TKSR</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid tienich__box">
+                                <div class="row tienich__box-content tienich__box-content__active" id="TienIchCon3">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Đặt vé xem phim trên ví TKSR
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Đặt vé ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch1.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                <div class="row tienich__box-content" id="TienIchCon4">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="tienich__patch-container__absolute" id="TienIch2">
+                            <div class="tienich__part-btn">
+                                <div class="tienich__part-btn__content">
+                                    <div class="btn btn__tienich btn__tienich-active" data-slideTienIchCon="TienIchCon5">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Vé máy bay</span>
+                                    </div>
+                                    <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon6">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Vé khách sạn</span>
+                                    </div>
+                                    <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon7">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Vé tàu hoả</span>
+                                    </div>
+                                    <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon8">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Đặt khách sạn</span>
+                                    </div>
+                                    <div class="btn btn__tienich" data-slideTienIchCon="TienIchCon9">
+                                            <img src="./assets/img/logo/logoBtnTienIch.jpg" alt="" class="btn__tienich-icon">
+                                            <span class="btn__tienich-text">Trải nghiệm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid tienich__box">
+                                <div class="row tienich__box-content tienich__box-content__active" id="TienIchCon5">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Đặt vé xem phim trên ví TKSR
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Đặt vé ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch1.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                <div class="row tienich__box-content" id="TienIchCon6">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                <div class="row tienich__box-content" id="TienIchCon7">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                <div class="row tienich__box-content" id="TienIchCon8">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                                <div class="row tienich__box-content" id="TienIchCon9">
+                                        <div class="col tienich__box-item__left">
+                                            <h4 class="tienich__box-item__text">
+                                                Thanh toán mua vé số Vietlott
+                                            </h4>
+                                            <ul class="tienich__box-item__list">
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Du hí các rạp, 
+                                                        <strong class="box-item__list-text">
+                                                            Trải nghiệm phim hay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> Đặt vé trực tiếp, 
+                                                        <strong class="box-item__list-text">
+                                                            Thanh toán xong ngay
+                                                        </strong></span>
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Gợi ý cho bạn
+                                                        </strong>
+                                                        ,suất chiếu gần đây
+                                                    </span>
+                                                        
+                                                </li>
+                                                <li class="box-item__list">
+                                                    <img src="./assets/img/logo/check.svg" alt="" class="box-item__list-icon">
+                                                    <span> 
+                                                        <strong class="box-item__list-text">
+                                                            Lịch sử đặt vé
+                                                        </strong>
+                                                        được lưu lại ngay
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="row tienich__merchant">
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            CGV
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            9k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Galaxy Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            BHD Star
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            10%
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-3 c-3 tienich__merchant-item">
+                                                    <a href="#" class="tienich__merchant-item__link">
+                                                        <img src="./assets/img/merchanr1.jpg" alt="">
+                                                        <div class="tienich__merchant-item__text">
+                                                            Lotte Cinema
+                                                        </div>
+                                                        <div class="tienich__merchant-tag">
+                                                            75k
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-merchant">Mua vé số Vietlott ngay</a>
+                                        </div>
+                                        <div class="col tienich__box-item__right">
+                                            <img src="./assets/img/TienIch2.jpg" alt="" class="tienich__box-item__img">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus expedita doloribus molestias iure a exercitationem impedit excepturi sint corrupti libero earum reprehenderit tempore, dicta repudiandae accusantium voluptate, numquam architecto.
-        Dignissimos eveniet quidem illum. Dolor omnis, at autem atque commodi sunt, repellendus maiores, saepe earum molestias et laboriosam voluptatibus amet nisi enim molestiae quisquam quaerat ipsam nostrum facilis? Ipsam, cum?
-        Voluptas quia fugiat repellat iste dolor assumenda dignissimos quibusdam doloremque laudantium dicta! Aut accusamus reprehenderit hic explicabo non atque quae quis ducimus iusto dicta, eos optio officiis quasi in numquam!
-        Quidem odio pariatur eveniet numquam magni vitae quos, similique quaerat ipsum provident tempora. Dicta, aut id. Eius recusandae ipsa assumenda dolor voluptates exercitationem fugiat error aliquam dolorem, atque saepe laboriosam.
-        Aliquid, obcaecati consequuntur. Ea laborum debitis sint exercitationem iure vero culpa dolorem hic error, ad tempore asperiores voluptates sunt nostrum inventore placeat ipsam esse ab, quae, cupiditate atque autem voluptatem.
-        Velit facilis officiis repellat veniam ad ratione doloremque dolorem recusandae perspiciatis eum. Suscipit sit, omnis maxime voluptate ratione architecto velit odio blanditiis nihil ea quidem similique dicta sint error eveniet?
-        Soluta facilis velit dolor! Neque architecto enim dolorem consectetur quis esse quibusdam maxime quam similique voluptate tempora, illum soluta laudantium atque perferendis reprehenderit libero alias iure aliquid! Nam, soluta sunt!
-        Totam doloremque ducimus harum soluta corrupti, earum nam dolorum adipisci nobis ullam possimus? Quibusdam quos temporibus repellendus officia nesciunt eius nam voluptatibus qui consequuntur aperiam. Quos dolor laborum quasi necessitatibus!
-        Ratione id fugit libero aut maxime ullam quidem magni quis fugiat aliquid vel consequatur, dolorum ipsa veniam veritatis repudiandae dolores aperiam odit nam doloribus, laudantium porro facilis unde quod. Officiis.
-        Culpa illum commodi ipsa quos! Consectetur dicta deserunt modi expedita architecto earum aliquam nihil molestias illum, nam ratione corporis quibusdam quas, qui sunt aut a. Deserunt a ab temporibus soluta!
     </div>
     <div class="modal">
         <div class="modal__overlay"></div>
@@ -571,7 +1549,7 @@
         <div class="modal__body-mobile">
             <div class="nav__mobile-container">
                 <div class="nav__mobile-header">
-                    <img src="./assets/img/logo/logo1.jpg" alt="" class="navbar__logo-mobile">
+                    <img src="./assets/img/logo/logo.jpg" alt="" class="navbar__logo-mobile">
                     <span>TKSR.COM</span>
                     <i class="fas fa-times auth-form__icon-mobile"></i>
                 </div>
@@ -583,11 +1561,11 @@
                         <span>Đăng ký</span>
                     </li>
                     <li class="nav__mobile-item">
-                        <div class="nav__m-item__top" data-slideMobile="0">
+                        <div class="nav__m-item__top" data-slideMobile="slide0">
                             <span>Dịch vụ</span>
                             <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu" id="0">
+                        <div class="grid nav__m-item__menu" id ="slide0">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -653,11 +1631,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div class="nav__m-item__top" data-slideMobile="1">
+                        <div class="nav__m-item__top" data-slideMobile="slide1">
                             <span>Chúng tôi</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu" id="1">
+                        <div class="grid nav__m-item__menu" id ="slide1">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -681,11 +1659,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div class="nav__m-item__top" data-slideMobile="2">
+                        <div class="nav__m-item__top" data-slideMobile="slide2">
                             <span>Tin tức</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu" id="2">
+                        <div class="grid nav__m-item__menu" id ="slide2">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -703,11 +1681,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div class="nav__m-item__top" data-slideMobile="3">
+                        <div class="nav__m-item__top" data-slideMobile="slide3">
                             <span>Trợ giúp</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu" id="3">
+                        <div class="grid nav__m-item__menu" id ="slide3">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">
@@ -725,11 +1703,11 @@
                         </div>
                     </li>
                     <li class="nav__mobile-item">
-                        <div class="nav__m-item__top" data-slideMobile="4">
+                        <div class="nav__m-item__top" data-slideMobile="slide4">
                             <span>Đối tác</span>
                         <i class="fas fa-angle-down m-item__icon-mobile"></i>
                         </div>
-                        <div class="grid nav__m-item__menu" id="4">
+                        <div class="grid nav__m-item__menu" id ="slide4">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
                                     <a href="#" class="m-item__menu-link">

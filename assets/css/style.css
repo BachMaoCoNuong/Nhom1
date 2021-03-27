@@ -19,6 +19,7 @@
     --background_primary: #e81f760e;
     --color_hover:#e0e0e0;
     --color_nav_mobile: #f8f8f8;
+    --tienich_background__color: #ffe9f1;
 }
 .html{
     width: 100%;
@@ -87,7 +88,7 @@
     transition: linear 0.3s;
 }
 .navbar__list-item:hover i{
-    transform: rotateX(180deg);
+    transform: rotate(180deg);
 }
 .navbar__list-item:hover{
     color: var(--text_color);
@@ -487,9 +488,6 @@
 .m-item__icon-mobile{
     transition: all 0.3s ease-in-out;
 }
-.m-item__icon-up{
-    transform: rotateX(180deg);
-}
 .hide__m-menu__mobile{
     visibility: visible;
 }
@@ -515,6 +513,9 @@
 .nav_mobile-active{
     color: var(--text_color);
     background-color: var(--color_hover);
+}
+.nav_mobile-active .m-item__icon-mobile{ 
+    transform: rotate(180deg);
 }
 .m-item__menu-link:hover{
     color: var(--primary_color);
@@ -671,4 +672,178 @@
 }
 .tienich__tab-item:not(:last-child){
     border-right: 1px solid #e0e0e0;
+}
+.tienich__patch{
+    box-shadow: 0 -5px 5px -5px rgb(0, 0, 0, 10%);
+}
+.tienich__patch-container{
+    padding: 15px 13px 40px 13px;
+}
+.tienich__patch-container__absolute{
+    display: none;
+}
+.tienich__patch-container__absolute.patch-container__absolute-active{
+    display: block;
+}
+.tienich__part-btn{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.tienich__part-btn__content{
+    padding: 5px 3px 15px 5px;
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: auto;
+}
+.btn__tienich{
+
+    border: solid 1px transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text_color_medium);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 6px rgba(0,0,0,.1),0 1px 4px rgba(0,0,0,.1);
+}
+.btn__tienich.btn__tienich-active{
+    background-color: var(--tienich_background__color);
+    color: var(--primary_color);
+    border: solid 1px var(--primary_color);
+}
+.btn__tienich:hover{
+    border: solid 1px var(--primary_color);
+    color: var(--primary_color);
+}
+.btn__tienich + .btn__tienich{
+    margin-left: 0.5rem;
+}
+.btn__tienich-icon{
+    width: 26px;
+    color: var(--while_color);
+}
+.btn__tienich-icon::selection {
+    background: #e81f76;
+    color: #fff;
+}
+.btn__tienich-text{
+    font-size: 1rem;
+    display: block;
+    white-space: nowrap;
+}
+.tienich__box{
+    background-color: var(--tienich_background__color);
+    border-radius: 20px;
+    padding: 25px 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.tienich__box-item__text{
+    font-size: 1.5rem;
+    color: var(--text_color);
+}
+.tienich__box-item__list{
+    list-style: none;
+    margin: 20px 0px 15px 0px;
+}
+.box-item__list{
+    display: flex;
+    position: relative;
+    color: var(--text_color_medium);
+    padding-left: 35px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.box-item__list:not(:last-child):after{
+    content: '';
+    width: 1px;
+    position: absolute;
+    background-color: var(--text_color_medium);
+    height: 100%;
+    top: 0;
+    left: 12.5px;
+}
+.box-item__list-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.box-item__list-text{
+    color: var(--text_color);
+    font-weight: bold;
+}
+.tienich__box-content{
+    display: none;
+}
+.tienich__box-content.tienich__box-content__active{
+    display: flex;
+}
+.tienich__box-item__right{
+    max-width: 100%;
+    flex: 1;
+}
+.tienich__box-item__img{
+    width: 100%;
+    border-radius: 5px;
+}
+.tienich__merchant-item{
+    position: relative;
+}
+.tienich__merchant-item__text{
+    color: var(--text_color_medium);
+    font-size: 11px;
+    text-align: center;
+}
+.tienich__merchant-item__link{
+    display: block;
+    text-decoration: none;
+    transition:  all 0.1s ease-in-out;
+    width: 100%;
+}
+.tienich__merchant-tag{
+    display: flex;
+    position: absolute;
+    transform: translateY(120%);
+    left: 65%;
+    top: -40%;
+    border-radius: 5px;
+    padding: 2px 3px;
+    width: fit-content;
+    color: var(--while_color);
+    background-color: var(--primary_color);
+    font-size: 11px;
+    align-items: center;
+}
+.tienich__merchant-item__link:hover .tienich__merchant-item__text{
+    color: var(--primary_color);
+}
+.tienich__merchant-item__link img{
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 15%);
+    margin: 0 auto 5px auto; 
+    display: block;
+}
+.tienich__box-item__left{
+    max-width: 41.66667%;
+    width: 100%;
+}
+.btn-merchant{
+    margin-top: 1.5rem;
+    color: var(--while_color);
+    text-decoration: none;
+    background-color: var(--primary_color);
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition:  all 0.2s ease-in-out;
+}
+.btn-merchant:hover{
+    background-color: var(--primary_color-hover);
 }

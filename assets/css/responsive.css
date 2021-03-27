@@ -58,11 +58,38 @@
     .intro__content-item__right .intro__item{
         flex-direction: column-reverse;
     }
+    .tienich__box{
+        background-color: var(--while_color);
+        padding: 0 13px;
+    }
+    .tienich__box-content{
+        flex-direction: column-reverse;
+        max-width: 514px;
+        margin: auto;
+    }
+    .tienich__box-item__left{
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .tienich__box-item__text{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .btn-merchant{
+        margin: 1.5rem auto 0 auto;
+    }
+    .tienich__box-item__text{
+        font-size: 1.3rem;
+    }
 }
 /* >= 740px and < 1024px*/
 @media (min-width: 46.25em) and (max-width: 63.9375em){
     .intro__item-text{
         width: 130px;
+    }
+    .wide.tienich__patch-container{
+        width: 100%;
+        padding: 15px 20px 40px 20px ;
     }
 }
 /* >= 1024px */

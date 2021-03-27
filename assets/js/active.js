@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     /* slide navbar mobile */
     const nav__mobile_slideTop = document.querySelectorAll('.nav__m-item__top');
-    const icon = document.querySelectorAll('.m-item__icon-mobile');
     for(var i = 0; i < nav__mobile_slideTop.length; i++){
         nav__mobile_slideTop[i].onclick = function(){
             if(this.classList[1] == 'nav_mobile-active'){
@@ -48,23 +47,21 @@ document.addEventListener("DOMContentLoaded",function(){
                 const slideUp = document.getElementById(slideDown);
                 slideUp.classList.remove('hide__m-menu__mobile');
                 slideUp.style.height = `0`;
-                icon[slideDown].classList.remove('m-item__icon-up');
             }
             else{
                 this.classList.add('nav_mobile-active');
                 const slideDown = this.getAttribute('data-slideMobile');
                 const slideUp = document.getElementById(slideDown);
                 slideUp.classList.add('hide__m-menu__mobile');
-                if(slideDown == 0){
+                if(slideDown == 'slide0'){
                     slideUp.style.height = `206px`;
                 }
-                else if(slideDown == 1){
+                else if(slideDown == 'slide1'){
                     slideUp.style.height = `82.4px`;
                 }
                 else{
                     slideUp.style.height = `41.2px`;
                 }
-                icon[slideDown].classList.add('m-item__icon-up');
             }
         }
     }
@@ -101,4 +98,42 @@ document.addEventListener("DOMContentLoaded",function(){
         modal.classList.add('modal__active');
         auth_form__register.classList.add('auth-form__active');
     }
+    /* tienich__btn-slide */
+    /* Tienich con */
+    const btn__tienich = document.querySelectorAll('.btn__tienich');
+    for(var i = 0; i < btn__tienich.length; i++){
+        btn__tienich[i].onclick = function(){
+            if(this.classList[2] == null){
+                const btn__tienich__remove = document.querySelector('.patch-container__absolute-active .btn__tienich-active');
+                btn__tienich__remove.classList.remove('btn__tienich-active');
+                this.classList.add('btn__tienich-active');
+                const slide__con__active = this.getAttribute('data-slideTienIchCon');
+                const slide__con__display = document.getElementById(slide__con__active);
+                const slide__con__none = document.querySelectorAll('.patch-container__absolute-active .tienich__box-content');
+                for(var k = 0; k < slide__con__none.length; k++){
+                    slide__con__none[k].classList.remove('tienich__box-content__active');
+                }
+                slide__con__display.classList.add('tienich__box-content__active');
+            }
+        }
+    }
+     /* Tienich lon */
+     const btn__tienich__big = document.querySelectorAll('.tienich__tab-item');
+     for(var i = 0; i < btn__tienich__big.length; i++){
+         btn__tienich__big[i].onclick = function(){
+            if(this.classList[2] == null){
+                for(var j = 0; j < btn__tienich__big.length; j++){
+                    btn__tienich__big[j].classList.remove('tienich__tab-item__active');
+                }
+                this.classList.add('tienich__tab-item__active');
+                const slide__active = this.getAttribute('data-slideTienIch');
+                const slide__display = document.getElementById(slide__active);
+                const slide__none = document.querySelectorAll('.tienich__patch-container__absolute');
+                for(var k = 0; k < slide__none.length; k++){
+                    slide__none[k].classList.remove('patch-container__absolute-active');
+                }
+                slide__display.classList.add('patch-container__absolute-active');
+            }   
+         }
+     }
 },false)
