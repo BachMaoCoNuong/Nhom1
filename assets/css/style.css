@@ -20,6 +20,11 @@
     --color_hover:#e0e0e0;
     --color_nav_mobile: #f8f8f8;
     --tienich_background__color: #ffe9f1;
+    --tutorial_btn: #bdbdbd;
+}
+::selection{
+    background: var(--primary_color); 
+    color:var(--while_color);
 }
 .html{
     width: 100%;
@@ -553,6 +558,9 @@
 }
 
 /* Section Intro */
+.intro{
+    padding-top: 30px;
+}
 .intro__content{
     margin-top: 35px;
     display: flex;
@@ -603,7 +611,7 @@
 }
 .tienich{
     width: 100%;
-    padding: 20px 0px;
+    padding: 40px 0px 25px 0px;
     background-color: var(--while_color);
 }
 .tienich-container{
@@ -917,4 +925,237 @@
 .text__bold{
     font-weight: bold;
     color: var(--text_color);
+}
+/* tutorial */
+.tutorial{
+    padding: 60px 0;
+    background-image: url('../img/bg-taiapp-big-op.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tutorial__body{
+    display: none;
+}
+.tutorial__body.tutorial__body-active{
+    display: block;
+}
+.tutorial .section__title-text{
+    color: var(--while_color);
+    padding: 0;
+}
+.tutorial__btn-item{
+    width: 222px;
+    overflow: hidden;
+    height: 40px;
+}
+.tutorial__btn-item + .tutorial__btn-item {
+    margin-left: 30px;
+}
+.tutorial__content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px 0px 0px;
+}
+.tutorial__content-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.tutorial__btn{
+    background-color: var(--tutorial_btn);
+    padding: 0px 8px 0px 12px;
+    color: var(--text_color-menu);
+    font-size: 1rem;
+    font-weight: 600;
+    width: 210px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+    position: relative;
+    cursor: pointer;
+}
+.tutorial__btn span{
+    margin: 0 auto;
+}
+.tutorial__btn i{
+    display: none;
+}
+.tutorial__btn::before{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+    border-left: 16px solid var(--tutorial_btn);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: -5px;
+    transition: all .2s ease;
+}
+.tutorial__btn:hover{
+    background-color: var(--while_color);
+    color: var(--text_color);
+}
+.tutorial__btn:hover::before{
+    border-left: 16px solid var(--while_color);
+}
+.tutorial__btn.tutorial__btn-active{
+    background-color: var(--while_color);
+    color: var(--primary_color);
+}
+.tutorial__btn.tutorial__btn-active::before{
+    border-left: 16px solid var(--while_color);
+}
+
+
+
+
+
+.tutorial__phone{
+    width: 274px;
+    position: relative;
+    margin: 10px 45px 10px auto;
+}
+.phone,.phone img,.display__img{
+    width: 100%;
+}
+.display__phone{
+    position: absolute;
+    left: 12px;
+    top: 35px;
+    width: 250px;
+    overflow: hidden;
+}
+.display__phone-list{
+    width: fit-content;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.display__img{
+    border-radius: 8px;
+    width: 250px;
+}
+
+
+
+
+.tutorial__list{
+    list-style: none;
+    margin: 30px 0px 15px 0px;
+    z-index: 1;
+}
+.tutorial__list-item{
+    display: flex;
+    cursor: pointer;
+    color: rgba(255,255,255,.8);
+    font-size: 1rem;
+    position: relative;
+    max-height: 75px;
+    overflow: hidden;
+}
+.tutorial__list-item.tutorial__list-item__active{
+    max-height: 100%;
+}
+.process__body-content{
+    transition: all 0.2s ease-in-out;
+}
+.tutorial__list-item .process__body-content{
+    visibility: hidden;
+    opacity: 0;
+}
+.tutorial__list-item__active .process__body-content{
+    visibility: visible;
+    opacity: 1;
+}
+.process__number{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--while_color);
+    border: solid 2px var(--background_color-menu);
+    color: var(--primary_color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition:  all 0.2s ease-in-out;
+    z-index: 1;
+}
+.tutorial__list-item__active .process__number{
+    background-color: var(--primary_color);
+    color: var(--while_color);
+}
+.tutorial__list-item:not(:last-child):before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed rgba(255,255,255,.3);
+    left: 15px;
+    top: 0;
+}
+.process__body-title{
+    margin: 5px 0px;
+    transition:  all 0.2s ease-in-out;
+}
+.tutorial__list-item__active .process__body-title,.tutorial__list-item:hover .process__body-title{
+    color: var(--while_color);
+}
+.process__body{
+    max-width: 400px;
+}
+.process__body-content span{
+    display: block;
+    font-size: 14px;
+    line-height: 1.4rem;
+    margin-bottom: 15px;
+}
+.process__body-link{
+    text-decoration: none;
+    color: #ffcd00;
+}
+.process__body-link:hover{
+    color: #ffcc00c2;
+}
+.footer__tutorial{
+    margin-top: 1.5rem;
+}
+.tutorial__newuser{
+    display: flex;
+    align-items: center;
+}
+.btn__newuser{
+    text-decoration: none;
+    background-color: #ffcd00;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: var(--text_color);
+    margin-left: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.btn__newuser:hover{
+    background-color: #d9ae00;
+}
+.tutorial__newuser{
+    color: var(--while_color);
+    font-size: 15px;
+    padding: 8px 15px;
+    background-color: rgba(0,0,0,.3);
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+}
+.tutorial__newuser span{
+    color: #ffcd00;
+    font-weight: bold;
+    margin-left: 5px;
 }

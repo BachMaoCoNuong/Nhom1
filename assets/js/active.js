@@ -108,7 +108,8 @@ document.addEventListener("DOMContentLoaded",function(){
                 btn__tienich__remove.classList.remove('btn__tienich-active');
                 this.classList.add('btn__tienich-active');
                 const slide__con__active = this.getAttribute('data-slideTienIchCon');
-                const slide__con__display = document.getElementById(slide__con__active);
+                const slide__con = '.patch-container__absolute-active .' + slide__con__active;
+                const slide__con__display = document.querySelector(slide__con);
                 const slide__con__none = document.querySelectorAll('.patch-container__absolute-active .tienich__box-content');
                 for(var k = 0; k < slide__con__none.length; k++){
                     slide__con__none[k].classList.remove('tienich__box-content__active');
@@ -135,5 +136,53 @@ document.addEventListener("DOMContentLoaded",function(){
                 slide__display.classList.add('patch-container__absolute-active');
             }   
          }
-     }
+    }
+    /* tutorial */
+    const tutorial__list__item = document.querySelectorAll('.tutorial__list-item');
+    for(var i = 0; i < tutorial__list__item.length; i++){
+        tutorial__list__item[i].onclick = function(){
+            if(this.classList[1] == null){
+                const tutorial__list__item__hidden = document.querySelectorAll('.tutorial__body-active .tutorial__list-item');
+                for(var i = 0; i < tutorial__list__item__hidden.length; i++){
+                    tutorial__list__item__hidden[i].classList.remove('tutorial__list-item__active');
+                }
+                this.classList.add('tutorial__list-item__active');
+                const phone__display = this.getAttribute('data-phone');
+                const display__phone = document.querySelector('.tutorial__body-active .display__phone-list');
+                if(phone__display == 'phone0'){
+                    display__phone.style.transform = `translate3d(0, 0, 0)`;
+                }
+                else if(phone__display == 'phone1'){
+                    display__phone.style.transform = `translate3d(-250px, 0, 0)`;
+                }
+                else if(phone__display == 'phone2'){
+                    display__phone.style.transform = `translate3d(-500px, 0, 0)`;
+                }
+                else if(phone__display == 'phone3'){
+                    display__phone.style.transform = `translate3d(-750px, 0, 0)`;
+                }
+                else if(phone__display == 'phone4'){
+                    display__phone.style.transform = `translate3d(-1000px, 0, 0)`;
+                }
+            }
+        }
+    }
+    const tutorial__btn = document.querySelectorAll('.tutorial__btn');
+    for(var i = 0; i < tutorial__btn.length; i++){
+        tutorial__btn[i].onclick = function(){
+            if(this.classList[1] == null){
+                for(var j = 0; j < tutorial__btn.length; j++){
+                    tutorial__btn[j].classList.remove('tutorial__btn-active');
+                }
+                this.classList.add('tutorial__btn-active');
+                const tutorial__body_visible = this.getAttribute('data-tutorial');
+                const tutorial__body = document.getElementById(tutorial__body_visible);
+                const tutorial__body_hidden = document.querySelectorAll('.tutorial__body');
+                for(var j = 0; j < tutorial__body_hidden.length; j++){
+                    tutorial__body_hidden[j].classList.remove('tutorial__body-active');
+                }
+                tutorial__body.classList.add('tutorial__body-active');
+            }
+        }
+    }
 },false)

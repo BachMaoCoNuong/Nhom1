@@ -50,9 +50,6 @@
 .intro{
     background-color: var(--background_color);
 }
-.section__title{
-    padding: 13px 0px 0px 0px;
-}
 .section__title-text{
     font-size: 1.9rem;
     color: var(--primary_color);
