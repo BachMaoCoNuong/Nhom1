@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded",function(){
+    
     /* suggestions */
-    const search__suggestions__input = document.querySelector('.search-input');
-    const search__suggestions = document.querySelector('.search__suggestions');
-    search__suggestions__input.onclick = function(){
+    (function(){
+        const search__suggestions__input = document.querySelector('.search-input');
+        const search__suggestions = document.querySelector('.search__suggestions');
+        search__suggestions__input.onclick = function(){
         search__suggestions.classList.toggle('search__suggestions-active');
     }
+    })();
     /* login and register */
     const icon__login = document.querySelector('.navbar__login');
     const modal = document.querySelector('.modal');
@@ -185,4 +188,33 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         }
     }
+    /* security */
+    const security = (function(){
+        const security__item = document.querySelectorAll('.security__nav-item');
+        for(var i = 0; i < security__item.length; i++){
+            security__item[i].onclick = function(){
+                for(var j = 0; j < security__item.length; j++){
+                    security__item[j].classList.remove('security__active');
+                }
+                this.classList.add('security__active');
+                const security__content = document.querySelectorAll('.security__content');
+                for(var j = 0; j < security__content.length; j++){
+                    security__content[j].classList.remove('fade');
+                    setTimeout(function(){
+                        for(var k = 0; k < security__content.length; k++){
+                            security__content[k].classList.remove('security__content-active');
+                        }
+                    },200)
+                }
+                const security__slide = this.getAttribute('data-security');
+                setTimeout(function(){
+                    const security__slide__active = document.getElementById(security__slide);
+                    security__slide__active.classList.add('security__content-active');
+                    setTimeout(function(){
+                        security__slide__active.classList.add('fade');
+                    },50)
+                },200)
+            }
+        }
+    }())
 },false)

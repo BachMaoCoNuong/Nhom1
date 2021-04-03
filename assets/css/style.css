@@ -21,10 +21,14 @@
     --color_nav_mobile: #f8f8f8;
     --tienich_background__color: #ffe9f1;
     --tutorial_btn: #bdbdbd;
+    --text__security: #424242;
 }
 ::selection{
     background: var(--primary_color); 
     color:var(--while_color);
+}
+section{
+    width: 100%;
 }
 .html{
     width: 100%;
@@ -48,6 +52,7 @@
     z-index: 1;
     background-color: var(--background_navbar);
     z-index: 2;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 12%);
 }
 .header__navbar{
     display: flex;
@@ -1158,4 +1163,96 @@
     color: #ffcd00;
     font-weight: bold;
     margin-left: 5px;
+}
+.security{
+    padding: 60px 0;
+    background-color: var(--background_color-menu);
+}
+.container__security{
+    max-width: 1014px !important;
+}
+.security__nav-header{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-bottom: 1.5rem;
+    margin-top: 35px;
+}
+.security__nav{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    list-style: none;
+}
+.security__nav-item{
+    padding: 10px 0;
+    font-size: 1.1333rem;
+    color: var(--text__security);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+.security__nav-item + .security__nav-item{
+    margin-left: 20px;
+}
+.security__nav-item.security__active,.security__nav-item:hover{
+    color: var(--primary_color);
+}
+.security__nav-text{
+    position: relative;
+}
+.security__nav-text::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: var(--primary_color);
+    width: 0%;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.security__active .security__nav-text::after{
+    width: 100%;
+}
+.security__content-img{
+    display: flex;
+    justify-content: center;
+}
+.security__content-img-item{
+    width: 100%;
+}
+.security__content-text{
+    display: flex !important;
+    align-items: center;
+}
+.security__content-text__list{
+    list-style: none;
+    color: var(--text_color);
+    font-size: 15px;
+}
+.security__content-item{
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}
+.security__content-item-text{
+    margin-left: 15px;
+}
+.security__content-item-icon{
+    display: flex;
+    align-items: center;
+}
+.security__content{
+    display: none;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.fade{
+    opacity: 1 ;
+    transition: all 0.2s linear;
+}
+.security__content-active{
+    display: flex;
 }
