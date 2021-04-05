@@ -60,3 +60,7 @@
     padding: 6px 15px;
     display: block;
 }
+.fade{
+    opacity: 1 !important;
+    transition: all 0.2s linear !important;
+}

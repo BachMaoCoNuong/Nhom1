@@ -96,7 +96,7 @@ section{
     position: relative;
 }
 .navbar__list-item i {
-    transition: linear 0.3s;
+    transition: linear 0.2s;
 }
 .navbar__list-item:hover i{
     transform: rotate(180deg);
@@ -493,20 +493,15 @@ section{
     background-color: var(--color_nav_mobile);
     transition: all 0.3s ease-in-out;
     height: 0;
-    visibility: hidden;
     overflow: hidden;
 }
 .m-item__icon-mobile{
     transition: all 0.3s ease-in-out;
 }
-.hide__m-menu__mobile{
-    visibility: visible;
-}
 .m-item__menu-list{
     list-style: none;
     font-size: 14px;
     margin: 0;
-    height: 100%;
 }
 .m-item__menu-item{
     padding: 0px 5px;
@@ -1054,7 +1049,9 @@ section{
 
 
 
-
+.fix__height{
+    max-height: 540px !important;
+}
 .tutorial__list{
     list-style: none;
     margin: 30px 0px 15px 0px;
@@ -1066,11 +1063,12 @@ section{
     color: rgba(255,255,255,.8);
     font-size: 1rem;
     position: relative;
-    max-height: 75px;
+    height: 75px;
     overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
 .tutorial__list-item.tutorial__list-item__active{
-    max-height: 100%;
+    height: fit-content;
 }
 .process__body-content{
     transition: all 0.2s ease-in-out;
@@ -1120,6 +1118,7 @@ section{
 }
 .process__body{
     max-width: 400px;
+    height: fit-content;
 }
 .process__body-content span{
     display: block;
@@ -1251,10 +1250,6 @@ section{
 .security__content{
     display: none;
     opacity: 0;
-    transition: all 0.2s linear;
-}
-.fade{
-    opacity: 1 ;
     transition: all 0.2s linear;
 }
 .security__content-active{
