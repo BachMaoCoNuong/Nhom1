@@ -115,9 +115,19 @@ document.addEventListener("DOMContentLoaded",function(){
                 const slide__con__display = document.querySelector(slide__con);
                 const slide__con__none = document.querySelectorAll('.patch-container__absolute-active .tienich__box-content');
                 for(var k = 0; k < slide__con__none.length; k++){
-                    slide__con__none[k].classList.remove('tienich__box-content__active');
+                    slide__con__none[k].classList.remove('fade');
+                    setTimeout(function(){
+                        for(var j = 0; j < slide__con__none.length; j++){
+                            slide__con__none[j].classList.remove('tienich__box-content__active');
+                        }
+                    },200)
                 }
-                slide__con__display.classList.add('tienich__box-content__active');
+                setTimeout(function(){
+                    slide__con__display.classList.add('tienich__box-content__active');
+                    setTimeout(function(){
+                        slide__con__display.classList.add('fade');
+                    },1)       
+                },200)
             }
         }
     }
@@ -134,9 +144,19 @@ document.addEventListener("DOMContentLoaded",function(){
                 const slide__display = document.getElementById(slide__active);
                 const slide__none = document.querySelectorAll('.tienich__patch-container__absolute');
                 for(var k = 0; k < slide__none.length; k++){
-                    slide__none[k].classList.remove('patch-container__absolute-active');
+                    slide__none[k].classList.remove('fade');
+                    setTimeout(function(){
+                        for(var j = 0; j < slide__none.length; j++){
+                            slide__none[j].classList.remove('patch-container__absolute-active');
+                        }
+                    },200)
                 }
-                slide__display.classList.add('patch-container__absolute-active');
+                setTimeout(function(){
+                    slide__display.classList.add('patch-container__absolute-active');
+                    setTimeout(function(){
+                        slide__display.classList.add('fade');
+                    },1)       
+                },200)
             }   
          }
     }

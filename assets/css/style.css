@@ -694,7 +694,9 @@ section{
     padding: 15px 13px 40px 13px;
 }
 .tienich__patch-container__absolute{
+    opacity: 0;
     display: none;
+    transition: all 0.2s ease-in-out;
 }
 .tienich__patch-container__absolute.patch-container__absolute-active{
     display: block;
@@ -791,6 +793,8 @@ section{
     font-weight: bold;
 }
 .tienich__box-content{
+    opacity: 0;
+    transition:  all 0.2s ease-in-out;
     display: none;
 }
 .tienich__box-content.tienich__box-content__active{
