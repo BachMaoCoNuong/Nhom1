@@ -585,7 +585,7 @@ section{
     align-items: center;
 }
 .intro-item__logo{
-    background-image: url('../img/logo/IntroRound.svg');
+    background-image: url('../img/logo__intro/IntroRound.svg');
     position: relative;
     width: 83px;
     height: 83px;
@@ -593,7 +593,7 @@ section{
 .intro-item__logo img{
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 18%;
     transform: translateY(-50%);
 }
 .intro__item-text{
