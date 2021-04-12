@@ -93,49 +93,61 @@ document.addEventListener("DOMContentLoaded",function(){
     })();
     /* slide */
     (function(){
-        /* slide auto */
-        const time = setInterval(function(){
-            var btn__active = $('.slide__btn-item.slide__btn-item__active');
-            var slide__active = 0;
-            for (slide__active = 0; btn__active = btn__active.previousElementSibling; slide__active++){}
-            if(slide__active < slide__btn.length - 1){
-                const btn__close = $('.slide__btn-item.slide__btn-item__active');
-                btn__close.classList.remove('slide__btn-item__active');
-                slide__btn[slide__active].nextElementSibling.classList.add('slide__btn-item__active');
-                const width__tablet =  -slide__tablet.offsetWidth / 2 + 'px';
-                const width__mobile = -slide__mobile.offsetWidth / 2 + 'px';
-                if(slide__active == 0){
-                    slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
-                    slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
-                }
-            }
-            else{
-                const btn__close = $('.slide__btn-item.slide__btn-item__active');
-                btn__close.classList.remove('slide__btn-item__active');
-                slide__btn[0].classList.add('slide__btn-item__active');
-                slide__tablet.style.transform = `translate3d(0, 0, 0)`;
-                slide__mobile.style.transform = `translate3d(0, 0, 0)`;
-            }
-        },5000)
-        /* slide click */
-        const slide__btn = $$('.slide__btn-item');
+        let s = 5000;
         const slide__tablet = $('.slide__tablet');
         const slide__mobile = $('.slide__mobile');
+        const time = setInterval(function(){
+            const btn__active = $$('.slide__btn-item');
+            btn__active.forEach((slide__active,index) => {
+                if(slide__active.classList[1] == null){
+                    slide__active.classList.add('slide__btn-item__active');
+                    if(index == 1){
+                        const width__tablet =  -slide__tablet.offsetWidth / 2 + 'px';
+                        const width__mobile = -slide__mobile.offsetWidth / 2 + 'px';
+                        slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                    }
+                    if(index == 0){
+                        slide__tablet.style.transform = `translate3d(0, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(0, 0, 0)`;
+                    }
+                }
+                else{
+                    slide__active.classList.remove('slide__btn-item__active');
+                }
+            })
+        },s)
+        const slide__btn = $$('.slide__btn-item');
+        /* slide click */
         slide__btn.forEach((slide__active,index) => {
             slide__active.onclick = function(){
                 if(this.classList[1] == null){
-                    const btn__close = $('.slide__btn-item.slide__btn-item__active');
-                    btn__close.classList.remove('slide__btn-item__active');
+                    const btn__close = $$('.slide__btn-item.slide__btn-item__active');
+                    for(var i = 0; i < btn__close.length;i++){
+                        btn__close[i].classList.remove('slide__btn-item__active');
+                    }
                     this.classList.add('slide__btn-item__active');
                     const width__tablet =  -slide__tablet.offsetWidth / 2 + 'px';
                     const width__mobile = -slide__mobile.offsetWidth / 2 + 'px';
                     if(index == 0){
                         slide__tablet.style.transform = `translate3d(0, 0, 0)`;
                         slide__mobile.style.transform = `translate3d(0, 0, 0)`;
+                        slide__btn[2].classList.add('slide__btn-item__active');
                     }
                     else if(index == 1){
                         slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
                         slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                        slide__btn[3].classList.add('slide__btn-item__active');
+                    }
+                    else if(index == 2){
+                        slide__tablet.style.transform = `translate3d(0, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(0, 0, 0)`;
+                        slide__btn[0].classList.add('slide__btn-item__active');
+                    }
+                    else if(index == 3){
+                        slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                        slide__btn[1].classList.add('slide__btn-item__active');
                     }
                 }
             }
