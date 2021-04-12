@@ -25,6 +25,12 @@
         max-width: 540px !important;
         padding: 0 16px;
     }
+    .slide__tablet{
+        display: none;    
+    }
+    .slide__mobile{
+        display: flex;
+    }
     .search-input{
         margin: 0 15px;
     }
@@ -37,12 +43,6 @@
     .nav__mobile-active {
         left: 0 !important; 
         width: 100% !important;
-    }
-    .slide__img{
-        display: none;
-    }
-    .slide__img-mobile{
-        display: block;
     }
     .intro__content-item__between{
         display: none;
@@ -173,6 +173,7 @@
     .navbar__bar{
         display: none;
     }
+    
 }
 /* < 1024px */
 @media (max-width: 63.9375em){
