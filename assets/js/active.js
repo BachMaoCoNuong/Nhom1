@@ -102,10 +102,8 @@ document.addEventListener("DOMContentLoaded",function(){
                 if(slide__active.classList[1] == null){
                     slide__active.classList.add('slide__btn-item__active');
                     if(index == 1){
-                        const width__tablet =  -slide__tablet.offsetWidth / 2 + 'px';
-                        const width__mobile = -slide__mobile.offsetWidth / 2 + 'px';
-                        slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
                     }
                     if(index == 0){
                         slide__tablet.style.transform = `translate3d(0, 0, 0)`;
@@ -127,16 +125,14 @@ document.addEventListener("DOMContentLoaded",function(){
                         btn__close[i].classList.remove('slide__btn-item__active');
                     }
                     this.classList.add('slide__btn-item__active');
-                    const width__tablet =  -slide__tablet.offsetWidth / 2 + 'px';
-                    const width__mobile = -slide__mobile.offsetWidth / 2 + 'px';
                     if(index == 0){
                         slide__tablet.style.transform = `translate3d(0, 0, 0)`;
                         slide__mobile.style.transform = `translate3d(0, 0, 0)`;
                         slide__btn[2].classList.add('slide__btn-item__active');
                     }
                     else if(index == 1){
-                        slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
                         slide__btn[3].classList.add('slide__btn-item__active');
                     }
                     else if(index == 2){
@@ -145,8 +141,8 @@ document.addEventListener("DOMContentLoaded",function(){
                         slide__btn[0].classList.add('slide__btn-item__active');
                     }
                     else if(index == 3){
-                        slide__tablet.style.transform = `translate3d(${width__tablet}, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(${width__mobile}, 0, 0)`;
+                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
+                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
                         slide__btn[1].classList.add('slide__btn-item__active');
                     }
                 }

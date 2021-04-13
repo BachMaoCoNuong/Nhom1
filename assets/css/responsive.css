@@ -151,8 +151,8 @@
     .security__content-img-item{
         max-width: 514px;
     }
-    .slide__icon img{
-        width: 30px;
+    .slide__btn-icon img{
+        width: 30px !important;
     }
 }
 /* >= 740px and < 1024px*/
