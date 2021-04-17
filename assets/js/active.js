@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded",function(){
         nav__mobile_slideTop.forEach((nav,index) => {
             const count = nav__mobile__slideUp[index];
             nav.onclick = function(){
-                if(this.classList[1] == 'nav_mobile-active'){
+                if(this.classList.contains('nav_mobile-active') == true){
                     this.classList.remove('nav_mobile-active');
                     count.style.height = `0`;
                 }

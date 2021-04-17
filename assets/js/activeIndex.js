@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",function(){
         const time = setInterval(function(){
             const btn__active = $$('.slide__btn-item');
             btn__active.forEach((slide__active,index) => {
-                if(slide__active.classList[1] == null){
+                if(slide__active.classList.contains('slide__btn-item__active') == false){
                     slide__active.classList.add('slide__btn-item__active');
                     if(index == 1){
                         slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",function(){
         /* slide click */
         slide__btn.forEach((slide__active,index) => {
             slide__active.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('slide__btn-item__active') == false){
                     const btn__close = $$('.slide__btn-item.slide__btn-item__active');
                     for(var i = 0; i < btn__close.length;i++){
                         btn__close[i].classList.remove('slide__btn-item__active');
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded",function(){
         btn__tienich__big.forEach((tienich,index) => {
             const count = tienich__patch__absolute[index];
             tienich.onclick = function(){
-                if(this.classList[2] == null){
+                if(this.classList.contains('tienich__tab-item__active') == false){
                     const tab__close = $('.tienich__tab-item.tienich__tab-item__active');
                     tab__close.classList.remove('tienich__tab-item__active');
                     this.classList.add('tienich__tab-item__active');
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded",function(){
         btn__tienich.forEach((tienichcon,index) => {
             const count = tienich__box__content[index];
             tienichcon.onclick = function(){
-                if(this.classList[2] == null){
+                if(this.classList.contains('btn__tienich-active') == false){
                     const btn__tienich__remove = $('.patch-container__absolute-active .btn__tienich-active');
                     btn__tienich__remove.classList.remove('btn__tienich-active');
                     this.classList.add('btn__tienich-active');
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded",function(){
         const tutorial__list__item = $$('.tutorial__body-active .tutorial__list-item');
         tutorial__list__item.forEach((tutorial,index) => {
             tutorial.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('tutorial__list-item__active') == false){
                     const tutorial__list__item__hidden = $('.tutorial__body-active .tutorial__list-item.tutorial__list-item__active');
                     tutorial__list__item__hidden.style.height = `75px`;
                     tutorial__list__item__hidden.classList.remove('tutorial__list-item__active');
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded",function(){
         tutorial__btn.forEach((btn__tutorial,index) => {
             const count = tutorial__body[index];
             btn__tutorial.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('tutorial__btn-active') == false){
                     const tutorial__close = $('.tutorial__btn.tutorial__btn-active');
                     tutorial__close.classList.remove('tutorial__btn-active');
                     this.classList.add('tutorial__btn-active');
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded",function(){
                     const tutorial__list__item = $$('.tutorial__body-active .tutorial__list-item');
                     tutorial__list__item.forEach((tutorial,index) => {
                         tutorial.onclick = function(){
-                            if(this.classList[1] == null){
+                            if(this.classList.contains('tutorial__list-item__active') == false){
                                 const tutorial__list__item__hidden = $('.tutorial__body-active .tutorial__list-item.tutorial__list-item__active');
                                 tutorial__list__item__hidden.style.height = `75px`;
                                 tutorial__list__item__hidden.classList.remove('tutorial__list-item__active');
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded",function(){
         security__item.forEach((slide,index) => {
             const count = security__content[index];
             slide.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('security__active') == false){
                     const slide__close = $('.security__nav-item.security__active');
                     slide__close.classList.remove('security__active');
                     this.classList.add('security__active');
@@ -213,4 +213,5 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         })
     }())
+    
 },false)

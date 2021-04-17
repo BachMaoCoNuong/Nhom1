@@ -4,12 +4,40 @@ document.addEventListener("DOMContentLoaded",function(){
     /* rechargecard */
     (function(){
         const rechargecard = $$('.card__item');
+        const content__title = $('.rechargecard__content-title');
+        const str = 'Thẻ điện thoại ';
+        const money = $('.money i');
+        const select__menhgia = $('.menhgia');
+        const select__soluong = $('.soluong');
+        select__menhgia.onclick = function(){
+            const coin = select__soluong.value * select__menhgia.value;
+            money.innerHTML = `Thành tiền: ` + coin.toLocaleString("en") + ` VNĐ`;
+        }
+        select__soluong.onclick = function(){
+            const coin = select__soluong.value * select__menhgia.value;
+            money.innerHTML = `Thành tiền: ` + coin.toLocaleString("en") + ` VNĐ`;
+        }
         rechargecard.forEach((rechargecard__active,index) => {
             rechargecard__active.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('card__item-active') == false){
                     const card__close = $('.card__item.card__item-active');
                     card__close.classList.remove('card__item-active');
                     this.classList.add('card__item-active');
+                    if(index == 0){
+                        content__title.innerHTML = str +  `Viettel`;
+                    }
+                    if(index == 1){
+                        content__title.innerHTML = str +  `Vinaphone`;
+                    }
+                    if(index == 2){
+                        content__title.innerHTML = str +  `Gmobile`;
+                    }
+                    if(index == 3){
+                        content__title.innerHTML = str +  `Vietnamobile`;
+                    }
+                    if(index == 4){
+                        content__title.innerHTML = str +  `Mobifone`;
+                    }
                 }
             }
         })
@@ -24,7 +52,7 @@ document.addEventListener("DOMContentLoaded",function(){
         security__item.forEach((slide,index) => {
             const count = security__content[index];
             slide.onclick = function(){
-                if(this.classList[1] == null){
+                if(this.classList.contains('security__active') == false){
                     const slide__close = $('.security__nav-item.security__active');
                     slide__close.classList.remove('security__active');
                     this.classList.add('security__active');
