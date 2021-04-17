@@ -91,4 +91,20 @@ document.addEventListener("DOMContentLoaded",function(){
             auth_form__register.classList.add('auth-form__active');
         }
     })();
+    /* scroll */
+    (function(){
+        let status = true;
+        let height = 1800;
+        const scroll = $('.scroll');
+        window.addEventListener('scroll',function(){
+            if(window.pageYOffset >= height && status == true){
+                scroll.classList.add('scroll__active');
+                status = false;
+            }
+            else if(window.pageYOffset <= height && status == false){
+                status = true;
+                scroll.classList.remove('scroll__active');
+            }
+        })
+    })();
 },false)

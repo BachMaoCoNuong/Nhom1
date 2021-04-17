@@ -13,10 +13,16 @@
     .process__body {
         max-width: 200px !important;
     }
+    .scroll{
+        left: 80% !important;
+    }
 }
 
 /* <= 739px */
 @media (max-width: 46.1875em){
+    .scroll{
+        left: 86%;
+    }
     .container{
         padding: 0 13px;
     }
@@ -172,6 +178,9 @@
     }
     .security{
         padding: 48px 0;
+    }
+    .scroll{
+        left: 90%;
     }
 }
 /* >= 1024px */
