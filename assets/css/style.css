@@ -16,11 +16,10 @@
 }
 .slide__animation{
     display: flex;
-    width: 200%;
     transition: all 0.8s ease;
 }
 .slide__img{
-    width: 50%;
+
 }
 .slide__mobile{
     display: none;
@@ -45,9 +44,6 @@
     list-style: none;
     max-width: 1200px;
     padding: 0 13px;
-}
-.slide__btn-icon li:last-child.slide__btn-item__active {
-    display: none;
 }
 .slide__btn-icon li img{
     cursor: pointer;

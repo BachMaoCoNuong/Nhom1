@@ -3,61 +3,96 @@ document.addEventListener("DOMContentLoaded",function(){
     const $$ = document.querySelectorAll.bind(document);
     /* slide */
     (function(){
+        /* slide auto */
+        const amount__slide = $$('.slide__animation');
+        const slide = $$('.slide__img');
+        const slide__btn = $$('.slide__btn .slide__btn-item');
+        const btn__none = $('.slide__btn-item.icon-right');
+        let width_slide_animation = (100 * slide.length)/2;
+        let width_slide = 100 / (slide.length/2);
+        for(let i = 0; i < amount__slide.length; i++){
+            amount__slide[i].style.width = `${width_slide_animation}%`;
+        }
+        for(let i = 0; i < slide.length; i++){
+            slide[i].style.width = `${width_slide}%`;
+        }
         let s = 5000;
-        const slide__tablet = $('.slide__tablet');
-        const slide__mobile = $('.slide__mobile');
         const time = setInterval(function(){
-            const btn__active = $$('.slide__btn-item');
-            btn__active.forEach((slide__active,index) => {
-                if(slide__active.classList.contains('slide__btn-item__active') == false){
-                    slide__active.classList.add('slide__btn-item__active');
-                    if(index == 1){
-                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
-                    }
-                    if(index == 0){
-                        slide__tablet.style.transform = `translate3d(0, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(0, 0, 0)`;
-                    }
+            let slide__next = 0;
+            let slide__btn__active = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+            for(slide__next = 0; slide__btn__active = slide__btn__active.previousElementSibling;slide__next++){}
+            if(slide__next < slide__btn.length-1){
+                const btn__close = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+                btn__close.classList.remove('slide__btn-item__active');
+                slide__btn[slide__next].nextElementSibling.classList.add('slide__btn-item__active');
+                let ani = (slide__next + 1) * width_slide;
+                for(let i = 0; i < amount__slide.length; i++){
+                    amount__slide[i].style.transform = `translate3d(-${ani}%, 0, 0)`;
+                }
+                if(slide__next == slide__btn.length-2){
+                    btn__none.style.display = `none`;
+                }
+            }
+            else{
+                const btn__close = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+                btn__close.classList.remove('slide__btn-item__active');
+                slide__btn[0].classList.add('slide__btn-item__active');
+                for(let i = 0; i < amount__slide.length; i++){
+                    amount__slide[i].style.transform = `translate3d(0, 0, 0)`;
+                }
+                btn__none.style.display = `block`;
+            }
+        },s)
+        /* slide click */
+        slide__btn.forEach((slide__click,index) =>{
+            slide__click.onclick = function(){
+                const btn__close = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+                btn__close.classList.remove('slide__btn-item__active');
+                this.classList.add('slide__btn-item__active');
+                let ani = (index) * width_slide;
+                for(let i = 0; i < amount__slide.length; i++){
+                    amount__slide[i].style.transform = `translate3d(-${ani}%, 0, 0)`;
+                }
+                if(index == slide__btn.length-1){
+                    
+                    btn__none.style.display = `none`;
                 }
                 else{
-                    slide__active.classList.remove('slide__btn-item__active');
-                }
-            })
-        },s)
-        const slide__btn = $$('.slide__btn-item');
-        /* slide click */
-        slide__btn.forEach((slide__active,index) => {
-            slide__active.onclick = function(){
-                if(this.classList.contains('slide__btn-item__active') == false){
-                    const btn__close = $$('.slide__btn-item.slide__btn-item__active');
-                    for(var i = 0; i < btn__close.length;i++){
-                        btn__close[i].classList.remove('slide__btn-item__active');
-                    }
-                    this.classList.add('slide__btn-item__active');
-                    if(index == 0){
-                        slide__tablet.style.transform = `translate3d(0, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(0, 0, 0)`;
-                        slide__btn[2].classList.add('slide__btn-item__active');
-                    }
-                    else if(index == 1){
-                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
-                        slide__btn[3].classList.add('slide__btn-item__active');
-                    }
-                    else if(index == 2){
-                        slide__tablet.style.transform = `translate3d(0, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(0, 0, 0)`;
-                        slide__btn[0].classList.add('slide__btn-item__active');
-                    }
-                    else if(index == 3){
-                        slide__tablet.style.transform = `translate3d(-50%, 0, 0)`;
-                        slide__mobile.style.transform = `translate3d(-50%, 0, 0)`;
-                        slide__btn[1].classList.add('slide__btn-item__active');
-                    }
+                    btn__none.style.display = `block`;
                 }
             }
         })
+        const btn__left = $('.slide__btn-item.icon-left');
+        btn__left.onclick = function(){
+            const btn__active = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+            let ani__index = btn__active.innerText - 1;
+            if(ani__index > 0){
+                btn__active.classList.remove('slide__btn-item__active');
+                slide__btn[ani__index - 1].classList.add('slide__btn-item__active');
+                let ani = (ani__index - 1) * width_slide;
+                for(let i = 0; i < amount__slide.length; i++){
+                  amount__slide[i].style.transform = `translate3d(-${ani}%, 0, 0)`;
+                }
+                if(ani__index == slide__btn.length - 1){
+                    btn__none.style.display = `block`;
+                }
+            }
+        }
+        btn__none.onclick = function(){
+            const btn__active = $('.slide__btn .slide__btn-item.slide__btn-item__active');
+            let ani__index = btn__active.innerText - 1;
+            if(ani__index < slide__btn.length - 1){
+                btn__active.classList.remove('slide__btn-item__active');
+                slide__btn[ani__index + 1].classList.add('slide__btn-item__active');
+                let ani = (ani__index + 1) * width_slide;
+                for(let i = 0; i < amount__slide.length; i++){
+                  amount__slide[i].style.transform = `translate3d(-${ani}%, 0, 0)`;
+                }
+                if(ani__index == slide__btn.length - 2){
+                    btn__none.style.display = `none`;
+                }
+            }
+        }
     })();
     const transition__tab = 200;
     /* tienich__btn-slide */
@@ -124,21 +159,8 @@ document.addEventListener("DOMContentLoaded",function(){
                     const max__height = $('.tutorial__body-active .tutorial__list-item.tutorial__list-item__active .process__body');
                     this.style.height = max__height.offsetHeight + "px";
                     const tutorial__phone = $('.tutorial__body-active .display__phone-list');
-                    if(index == '0'){
-                        tutorial__phone.style.transform = `translate3d(0, 0, 0)`;
-                    }
-                    else if(index == '1'){
-                        tutorial__phone.style.transform = `translate3d(-250px, 0, 0)`;
-                    }
-                    else if(index == '2'){
-                        tutorial__phone.style.transform = `translate3d(-500px, 0, 0)`;
-                    }
-                    else if(index == '3'){
-                        tutorial__phone.style.transform = `translate3d(-750px, 0, 0)`;
-                    }
-                    else if(index == '4'){
-                        tutorial__phone.style.transform = `translate3d(-1000px, 0, 0)`;
-                    }
+                    let ani = 250 * index;
+                    tutorial__phone.style.transform = `translate3d(-${ani}px, 0, 0)`;
                 }
             }
         })
@@ -165,21 +187,8 @@ document.addEventListener("DOMContentLoaded",function(){
                                 const max__height = $('.tutorial__body-active .tutorial__list-item.tutorial__list-item__active .process__body');
                                 this.style.height = max__height.offsetHeight + "px";
                                 const tutorial__phone = $('.tutorial__body-active .display__phone-list');
-                                if(index == '0'){
-                                    tutorial__phone.style.transform = `translate3d(0, 0, 0)`;
-                                }
-                                else if(index == '1'){
-                                    tutorial__phone.style.transform = `translate3d(-250px, 0, 0)`;
-                                }
-                                else if(index == '2'){
-                                    tutorial__phone.style.transform = `translate3d(-500px, 0, 0)`;
-                                }
-                                else if(index == '3'){
-                                    tutorial__phone.style.transform = `translate3d(-750px, 0, 0)`;
-                                }
-                                else if(index == '4'){
-                                    tutorial__phone.style.transform = `translate3d(-1000px, 0, 0)`;
-                                }
+                                let ani = 250 * index;
+                                tutorial__phone.style.transform = `translate3d(-${ani}px, 0, 0)`;
                             }
                         }
                     })

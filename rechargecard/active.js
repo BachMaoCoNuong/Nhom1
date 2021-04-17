@@ -17,32 +17,18 @@ document.addEventListener("DOMContentLoaded",function(){
             const coin = select__soluong.value * select__menhgia.value;
             money.innerHTML = `Thành tiền: ` + coin.toLocaleString("en") + ` VNĐ`;
         }
+        const category = ['Viettel','Vinaphone','Gmobile','Vietnamobile','Mobifone'];
         rechargecard.forEach((rechargecard__active,index) => {
             rechargecard__active.onclick = function(){
                 if(this.classList.contains('card__item-active') == false){
                     const card__close = $('.card__item.card__item-active');
                     card__close.classList.remove('card__item-active');
                     this.classList.add('card__item-active');
-                    if(index == 0){
-                        content__title.innerHTML = str +  `Viettel`;
-                    }
-                    if(index == 1){
-                        content__title.innerHTML = str +  `Vinaphone`;
-                    }
-                    if(index == 2){
-                        content__title.innerHTML = str +  `Gmobile`;
-                    }
-                    if(index == 3){
-                        content__title.innerHTML = str +  `Vietnamobile`;
-                    }
-                    if(index == 4){
-                        content__title.innerHTML = str +  `Mobifone`;
-                    }
+                    content__title.innerHTML = str + category[index];
                 }
             }
         })
     })();
-
 
     const transition__tab = 200;
     /* security */
