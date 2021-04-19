@@ -1,0 +1,48 @@
+.doitac__container{
+    background-color: var(--background_color);
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+.doitac__item{
+    min-height: 192px;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+.height__120px{
+    min-height: 120px !important;
+}
+.doitac__item:last-child{
+    border-bottom: none;
+}
+.tablet__border-none{
+    border-right: none;
+}
+.doitac__item-content{
+    padding: 20px 0 20px 80px;
+    position: relative;
+}
+.doitac__item-logo{
+    position: absolute;
+    width: 60px;
+    top: 20px;
+    left: 0;
+}
+.doitac__item-title{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text_color);
+}
+.doitac__item-sub{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+.container__pay{
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.container__over{
+    overflow: hidden;
+}

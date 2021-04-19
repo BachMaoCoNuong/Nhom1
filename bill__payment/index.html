@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nạp tiền điện thoại</title>
+    <title>Thanh toán hoá đơn</title>
     <link rel="icon" href="../assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/service.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/responsive__service.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     <div class="app">
@@ -33,7 +35,7 @@
                                 <div class="grid navbar__list-menu menu-xl">
                                     <ul class="row no-gutters list-nav__menu ">
                                         <li class="col l-4 list-nav__item">
-                                            <a href="#" class="navbar__list-link">
+                                            <a href="../rechargecard/index.html" class="navbar__list-link">
                                                 <div class="navbar__list-menu-icon"><img src="../assets/img/logo__tienich/icon5.svg" alt=""></div>
                                                 <div class="navbar__list-menu-text">
                                                     <span class="nav__menu-text-up">Nạp tiền điện thoại</span>
@@ -44,7 +46,7 @@
                                             </a>
                                         </li>
                                         <li class="col l-4 list-nav__item">
-                                            <a href="../bill__payment/index.html" class="navbar__list-link">
+                                            <a href="#" class="navbar__list-link">
                                                 <div class="navbar__list-menu-icon"><img src="../assets/img/logo__tienich/icon6.svg" alt=""></div>
                                                 <div class="navbar__list-menu-text">
                                                     <span class="nav__menu-text-up">Thanh toán hoá đơn</span>
@@ -360,7 +362,7 @@
                         <a href="../index/index.html" class="oriented-item oriented-item__link">Trang chủ</a>
                     </li>
                     <li class="oriented-item">Dịch vụ</li>
-                    <li class="oriented-item">Nạp thẻ</li>
+                    <li class="oriented-item">hoá đơn</li>
                 </ul>
             </div>
         </nav>
@@ -369,15 +371,15 @@
                 <h3 class="rechargecard__title">
                     chọn dịch vụ
                 </h3>
-                <div class="grid">
+                <div class="grid container__over">
                     <ul class="row list__card">
                         <li class="col l-2-4 m-4 c-6">
                             <div class="card__item  card__item-active">
                                 <div class="card__item-logo">
-                                    <img src="./img/logo5.jpg" alt="">
+                                    <img src="./img/logo1.jpg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    viettel
+                                    điện
                                 </div>
                             </div>
                         </li>
@@ -387,7 +389,7 @@
                                     <img src="./img/logo2.jpg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    vinaphone
+                                    nước
                                 </div>
                             </div>
                         </li>
@@ -397,7 +399,7 @@
                                     <img src="./img/logo3.jpg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    gmobile
+                                    internet
                                 </div>
                             </div>
                         </li>
@@ -407,207 +409,557 @@
                                     <img src="./img/logo4.jpg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    vietnamobile
+                                    truyền hình
                                 </div>
                             </div>
                         </li>
                         <li class="col l-2-4 m-4 c-6">
                             <div class="card__item">
                                 <div class="card__item-logo">
-                                    <img src="./img/logo1.jpg" alt="">
+                                    <img src="./img/logo5.jpg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    mobifone
+                                    chung cư
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col l-2-4 m-4 c-6">
+                            <div class="card__item">
+                                <div class="card__item-logo">
+                                    <img src="./img/logo6.jpg" alt="">
+                                </div>
+                                <div class="card__item-text">
+                                    vay tiêu dùng
                                 </div>
                             </div>
                         </li>
                     </ul>
-                    <h3 class="rechargecard__content-title">
-                        Thẻ điện thoại Viettel
-                    </h3>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Mệnh giá: 
+                    <div class="container__pay">
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Điện
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã khách hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập mã khách hàng">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Dien/Dien1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Điện lực Hồ Chí Minh
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Điện của tất cả các khu vực Quận, Huyện thuộc TP. Hồ Chí Minh.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Dien/Dien1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Điện lực Hà Nội
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Điện của tất cả các khu vực Quận, Huyện thuộc TP. Hà Nội.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Dien/Dien1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Điện lực Miền Nam
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Điện của tất cả các khu vực thuộc các tỉnh/thành: Đồng Nai, Cần Thơ, Bình Dương, Lâm Đồng, Sóc Trăng, Trà Vinh, Long An, Bà Rịa - Vũng Tàu, Cà Mau.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Dien/Dien1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Điện lực Miền trung
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Điện của tất cả các khu vực thuộc các tỉnh/thành: Quảng Bình, Đà Nẵng, Quảng Nam, Phú Yên, Khánh Hòa, Đăk Lăk, Đăk Nông, Kon Tum.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input menhgia">
-                                <option value="10000">Thẻ 10k</option>
-                                <option value="20000">Thẻ 20k</option>
-                                <option value="30000">Thẻ 30k</option>
-                                <option value="50000">Thẻ 50k</option>
-                                <option value="100000">Thẻ 100k</option>
-                                <option value="200000">Thẻ 200k</option>
-                                <option value="300000">Thẻ 300k</option>
-                                <option value="500000">Thẻ 500k</option>
-                                <option value="1000000">Thẻ 1 triệu</option>
-                            </select>
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Nước
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Nhà cung cấp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Nước Hồ Chí</option>
+                                        <option>Nước Hà</option>
+                                        <option>Nước Đà Nằng</option>
+                                        <option>Nước sạch HN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Chọn khu vực: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Nước Bến Thành</option>
+                                        <option>Nước Chợ Lớn</option>
+                                        <option>Nước Nhà Bè</option>
+                                        <option>Nước Thủ Đức</option>
+                                        <option>Nước Sạch Hà Nội</option>
+                                        <option>Nước Viwaca</option>
+                                        <option>Nước sạch Nam Hà Nội</option>
+                                        <option>Nước sạch Tây Hà Nội</option>
+                                        <option>Nước Đà Nẵng</option>
+                                        <option>Nước sạch số 3 Hà Nội</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã khách hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập mã khách hàng">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Nuoc/Nuoc1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Nước Hồ Chí Minh
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Nước của tất cả các khu vực Quận, Huyện thuộc TP. Hồ Chí Minh.                                        
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Nuoc/Nuoc2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Nước VIWACO (Hà Nội)
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán tiền nước VIWACO cho các hộ gia đình của một số khu vực thuộc TP. Hà Nội.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Nuoc/Nuoc3.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Nước Đà Nẵng
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Nước của tất cả các khu vực thuộc TP. Đà Nẵng.                                        
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Nuoc/Nuoc4.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Nước sạch Hà Nội (Hawacom)
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán hóa đơn tiền nước HAWACO cho một số khu vực thuộc TP. Hà Nội.                                        
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Số lượng: 
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Internet
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Nhà cung cấp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>FPT Telecom</option>
+                                        <option>VNPT Toàn Quốc</option>
+                                        <option>VNPT Hà Nội</option>
+                                        <option>VNPT Hồ Chí Minh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Chọn tỉnh thành: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Hà Nội</option>
+                                        <option>TP. Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>An Giang Bình Dương</option>
+                                        <option>Hưng Yên</option>
+                                        <option>Bình Định</option>
+                                        <option>Bắc Giang</option>
+                                        <option>Hải Phòng</option>
+                                        <option>Bắc Kạn</option>
+                                        <option>Bạc Liêu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã khách hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập mã khách hàng">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Internet/Internet1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                ADSL FPT
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán cước Internet FPT trên phạm vi toàn quốc.                                        
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Internet/Internet2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                VNPT Toàn Quốc
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Internet/ Điện thoại cố định/ MyTV cho VNPT toàn quốc.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Internet/Internet2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                VNPT Hồ Chí Minh
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Internet/ Điện thoại cố định/ MyTV của VNPT TPHCM                                     
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/Internet/Internet2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                VNPT Hà Nội
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                                Thanh toán được cho hóa đơn Internet/ Điện thoại cố định/ MyTV của VNPT Hà Nội.                                  
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input soluong">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Truyền hình
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Nhà cung cấp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Truyền hình cáp</option>
+                                        <option>Gia hạn, mua gói cước VTVcab</option>
+                                        <option>Mua tài khoản MyK+ Now</option>
+                                        <option>VTC Truyền hình</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã khách hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập mã khách hàng">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/TruyenHinh/TruyenHinh1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Gia hạn cước Truyền hình K+
+                                            </div>
+                                            <span class="doitac__item-sub">                                      
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/TruyenHinh/TruyenHinh2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Truyền hình Cab HTVC
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/TruyenHinh/TruyenHinh3.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Truyền hình cáp VTVcab
+                                            </div>
+                                            <span class="doitac__item-sub">                               
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/TruyenHinh/TruyenHinh4.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                VTC truyền hình số
+                                            </div>
+                                            <span class="doitac__item-sub">                                 
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Nhập mật khẩu thanh toán cấp 2: 
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Chung cư
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Nhà cung cấp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Chung cư Phúc Hưng</option>
+                                        <option>Chung cư Belleza</option>
+                                        <option>Chung cư Time City</option>
+                                        <option>Chung cư Sài Gòn Mới</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã căn hộ/ Mã khách hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Mã căn hộ/Nhập mã khách hàng">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/ChungCu/ChungCu1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Chung cư Phúc Hưng
+                                            </div>
+                                            <span class="doitac__item-sub">                                      
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/ChungCu/ChungCu2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Chung cư Belleza
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/ChungCu/ChungCu3.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Chung cư Time City
+                                            </div>
+                                            <span class="doitac__item-sub">                               
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/ChungCu/ChungCu4.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Chung cư Sài Gòn Mới
+                                            </div>
+                                            <span class="doitac__item-sub">                                 
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <input class="select__input" placeholder="Nhập mật khẩu thanh toán" type="password">
-                            <div class="row money">
-                                <i>Thành tiền: 10,000 VNĐ</i>
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Tiện ích thanh toán hoá đơn Vay tiêu dùng
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Nhà cung cấp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>FE Credit</option>
+                                        <option>Home Credit</option>
+                                        <option>HD SaiGon</option>
+                                        <option>Viet Credit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Loại hợp đồng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Số hoá đơn</option>
+                                        <option>Số CMND</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Số hoá đơn/ Số CMND: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập Số hoá đơn/ Số CMND">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Tiếp tục
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__end">
+                                đối tác thanh toán
+                            </h3>
+                            <div class="grid doitac__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/VayTieuDung/Vay1.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                FE Credit
+                                            </div>
+                                            <span class="doitac__item-sub">                                      
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/VayTieuDung/Vay2.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Home Credit
+                                            </div>
+                                            <span class="doitac__item-sub">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__border-none tablet__border-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/VayTieuDung/Vay3.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                HD SAISON
+                                            </div>
+                                            <span class="doitac__item-sub">                               
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6 doitac__item height__120px mobile__borderRight-none">
+                                        <div class="doitac__item-content">
+                                            <img class="doitac__item-logo" src="../bill__payment/img/VayTieuDung/Vay4.jpg" alt="">
+                                            <div class="doitac__item-title">
+                                                Viet Credit
+                                            </div>
+                                            <span class="doitac__item-sub">                                 
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="buy">
-                        <a href="#" class="btn__card-buy">
-                            Mua mã thẻ
-                        </a>
-                    </div>
                 </div>
-                <h3 class="rechargecard__history-title">
-                    Danh sách thẻ đã mua
-                </h3>
-                <div class="row rechargecard__history-select">
-                    <div class="col l-2-4 m-2-4 c-12 rechargecard__history-item">
-                        <select class="select__input">
-                            <option>Loại thẻ</option>
-                            <option>Viettel</option>
-                            <option>vinaphone</option>
-                            <option>Gmobile</option>
-                            <option>vietnamobile</option>
-                            <option>Mobifone</option>
-                        </select>
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-12 rechargecard__history-item">
-                        <select class="select__input">
-                            <option>Mệnh giá</option>
-                            <option value="10000">Thẻ 10k</option>
-                            <option value="20000">Thẻ 20k</option>
-                            <option value="30000">Thẻ 30k</option>
-                            <option value="50000">Thẻ 50k</option>
-                            <option value="100000">Thẻ 100k</option>
-                            <option value="200000">Thẻ 200k</option>
-                            <option value="300000">Thẻ 300k</option>
-                            <option value="500000">Thẻ 500k</option>
-                            <option value="1000000">Thẻ 1 triệu</option>
-                        </select>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item btn__history">
-                        <a href="#" class="btn__search-history">
-                            <i class="fas fa-search search-history"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid rechargecard__history-content">
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Loại thẻ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Mã thẻ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Mệnh giá
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Ngày mua
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-            </div>
         </section>
         <section class="security">
             <div class="grid wide container container__security">
@@ -897,13 +1249,13 @@
                         <div class="grid nav__m-item__menu">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
-                                    <a href="#" class="m-item__menu-link">
+                                    <a href="../rechargecard/index.html" class="m-item__menu-link">
                                         <img class="m-item__menu-logo" src="../assets/img/logo__tienich/icon5.svg" alt="">
                                         <span class="nav__mobile-menu-text">Nạp tiền điện thoại</span>
                                     </a>
                                 </li>
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
-                                    <a href="../bill__payment/index.html" class="m-item__menu-link">
+                                    <a href="#" class="m-item__menu-link">
                                         <img class="m-item__menu-logo" src="../assets/img/logo__tienich/icon6.svg" alt="">
                                         <span class="nav__mobile-menu-text">Thanh toán hoá đơn</span>
                                     </a>
