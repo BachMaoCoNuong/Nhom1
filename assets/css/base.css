@@ -145,6 +145,7 @@ html{
 }
 .oriented-item{
     color: var(--text_color);
+    white-space: nowrap;
 }
 .oriented-item + .oriented-item{
     position: relative;

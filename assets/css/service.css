@@ -47,6 +47,7 @@
     transition: all 0.2s ease;
     font-size: 14px;
     margin-left: 15px;
+    color: var(--text_color);
 }
 .card__item-active{
     border-color: var(--primary_color);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mua thẻ điện thoại</title>
+    <title>Thanh toán hoá đơn</title>
     <link rel="icon" href="../assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/service.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/responsive__service.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     <div class="app">
@@ -33,7 +35,7 @@
                                 <div class="grid navbar__list-menu menu-xl">
                                     <ul class="row no-gutters list-nav__menu ">
                                         <li class="col l-4 list-nav__item">
-                                            <a href="#" class="navbar__list-link">
+                                            <a href="../rechargecard/index.html" class="navbar__list-link">
                                                 <div class="navbar__list-menu-icon"><img src="../assets/img/logo__tienich/icon5.svg" alt=""></div>
                                                 <div class="navbar__list-menu-text">
                                                     <span class="nav__menu-text-up">Mua thẻ điện thoại</span>
@@ -360,251 +362,176 @@
                         <a href="../index/index.html" class="oriented-item oriented-item__link">Trang chủ</a>
                     </li>
                     <li class="oriented-item">Dịch vụ</li>
-                    <li class="oriented-item">Nạp thẻ</li>
+                    <li class="oriented-item">Nạp ví</li>
+                    <li class="oriented-item">Thẻ ATM</li>
                 </ul>
             </div>
         </nav>
         <section class="rechargecard">
             <div class="grid wide container__rechargecard">
                 <h3 class="rechargecard__title">
-                    chọn dịch vụ
+                    Nạp tiền vào ví
                 </h3>
-                <div class="grid">
+                <div class="grid over">
                     <ul class="row list__card">
                         <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item  card__item-active">
+                            <a href="./index.html" class="card__item">
                                 <div class="card__item-logo">
-                                    <img src="./img/logo5.jpg" alt="">
+                                    <img src="./img/icon2.svg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    viettel
+                                    Thẻ Cào
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col l-2-4 m-4 c-6">
+                            <div class="card__item card__item-active pay__atm">
+                                <div class="card__item-logo">
+                                    <img src="./img/icon3.svg" alt="">
+                                </div>
+                                <div class="card__item-text">
+                                    Thẻ atm
                                 </div>
                             </div>
                         </li>
                         <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item">
+                            <div class="card__item pay__atm">
                                 <div class="card__item-logo">
-                                    <img src="./img/logo2.jpg" alt="">
+                                    <img src="./img/icon1.svg" alt="">
                                 </div>
                                 <div class="card__item-text">
-                                    vinaphone
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item">
-                                <div class="card__item-logo">
-                                    <img src="./img/logo3.jpg" alt="">
-                                </div>
-                                <div class="card__item-text">
-                                    gmobile
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item">
-                                <div class="card__item-logo">
-                                    <img src="./img/logo4.jpg" alt="">
-                                </div>
-                                <div class="card__item-text">
-                                    vietnamobile
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item">
-                                <div class="card__item-logo">
-                                    <img src="./img/logo1.jpg" alt="">
-                                </div>
-                                <div class="card__item-text">
-                                    mobifone
+                                    Thẻ liên kết
                                 </div>
                             </div>
                         </li>
                     </ul>
-                    <h3 class="rechargecard__content-title">
-                        Thẻ điện thoại Viettel
-                    </h3>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Mệnh giá: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input menhgia">
-                                <option value="10000">Thẻ 10k</option>
-                                <option value="20000">Thẻ 20k</option>
-                                <option value="30000">Thẻ 30k</option>
-                                <option value="50000">Thẻ 50k</option>
-                                <option value="100000">Thẻ 100k</option>
-                                <option value="200000">Thẻ 200k</option>
-                                <option value="300000">Thẻ 300k</option>
-                                <option value="500000">Thẻ 500k</option>
-                                <option value="1000000">Thẻ 1 triệu</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Số lượng: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input soluong">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Nhập mật khẩu thanh toán cấp 2: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <input class="select__input" placeholder="Nhập mật khẩu thanh toán" type="password">
-                            <div class="row money">
-                                <i>Thành tiền: 10,000 VNĐ</i>
+                    <div class="container__pay">
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Gạch thẻ 
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Số tiền cần nạp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập số tiền cần nạp">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Chọn ngân hàng: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Techcombank</option>
+                                        <option>Vietcombank</option>
+                                        <option>Agribank</option>
+                                        <option>BIDV</option>
+                                        <option>SHB</option>
+                                        <option>ACB</option>
+                                        <option>MBBank</option>
+                                        <option>VietinBank</option>
+                                        <option>Sacombank</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Số thẻ: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập số thẻ">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Tên chủ thẻ: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập tên chủ thẻ">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Ngày hết hạn: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập ngày hết hạn">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã xác nhận: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <div class="input__code select__input">
+                                        <input class="select__input" placeholder="Nhập mã xác nhận">
+                                        </input>
+                                        <button class="send__code">Gửi mã</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Nạp
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="buy">
-                        <a href="#" class="btn__card-buy">
-                            Mua mã thẻ
-                        </a>
-                    </div>
-                </div>
-                <h3 class="rechargecard__history-title">
-                    Danh sách thẻ đã mua
-                </h3>
-                <div class="row rechargecard__history-select">
-                    <div class="col l-2-4 m-2-4 c-12 rechargecard__history-item">
-                        <select class="select__input">
-                            <option>Loại thẻ</option>
-                            <option>Viettel</option>
-                            <option>vinaphone</option>
-                            <option>Gmobile</option>
-                            <option>vietnamobile</option>
-                            <option>Mobifone</option>
-                        </select>
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-12 rechargecard__history-item">
-                        <select class="select__input">
-                            <option>Mệnh giá</option>
-                            <option value="10000">Thẻ 10k</option>
-                            <option value="20000">Thẻ 20k</option>
-                            <option value="30000">Thẻ 30k</option>
-                            <option value="50000">Thẻ 50k</option>
-                            <option value="100000">Thẻ 100k</option>
-                            <option value="200000">Thẻ 200k</option>
-                            <option value="300000">Thẻ 300k</option>
-                            <option value="500000">Thẻ 500k</option>
-                            <option value="1000000">Thẻ 1 triệu</option>
-                        </select>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item btn__history">
-                        <a href="#" class="btn__search-history">
-                            <i class="fas fa-search search-history"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid rechargecard__history-content">
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Loại thẻ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Mã thẻ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Mệnh giá
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Ngày mua
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        Viettel
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        0335251245010041
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        50.000 VNĐ
-                    </div>
-                    <div class="col l-3 m-3 c-3 history-title__item">
-                        23/03/2021
+                        <div class="pay">
+                            <h3 class="rechargecard__content-title">
+                                Chọn thẻ giao dịch
+                            </h3>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Số tiền cần nạp: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <input class="select__input" placeholder="Nhập số tiền cần nạp">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Chọn thẻ: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <select class="select__input">
+                                        <option>Techcombank **** 7801</option>
+                                        <option>Vietcombank ****8909</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row list__select">
+                                <div class="col l-6 m-6 c-12 list__select-text">
+                                    Mã xác nhận: 
+                                </div>
+                                <div class="col l-6 m-6 c-12 list__select-input">
+                                    <div class="input__code select__input">
+                                        <input class="select__input" placeholder="Nhập mã xác nhận">
+                                        </input>
+                                        <button class="send__code">Gửi mã</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="btn__card-buy">
+                                    Nạp
+                                </a>
+                            </div>
+                            <h3 class="rechargecard__content-title title__margin-top">
+                                Bạn muốn liên kết thẻ ATM
+                                <div class="buy">
+                                    <a href="#" class="btn__card-buy">
+                                        Liên kết ngay
+                                    </a>
+                                </div>
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -897,7 +824,7 @@
                         <div class="grid nav__m-item__menu">
                             <ul class="row m-item__menu-list">
                                 <li class="clo l-6 m-6 c-6 m-item__menu-item">
-                                    <a href="#" class="m-item__menu-link">
+                                    <a href="../rechargecard/index.html" class="m-item__menu-link">
                                         <img class="m-item__menu-logo" src="../assets/img/logo__tienich/icon5.svg" alt="">
                                         <span class="nav__mobile-menu-text">Mua thẻ điện thoại</span>
                                     </a>
@@ -1064,6 +991,7 @@
     </div>
     <script src="../assets/js/active.js"></script>
     <script src="./active.js"></script>
+    <script src="./script.js"></script>
     <script src="../assets/js/service.js"></script>
 </body>
 </html>
