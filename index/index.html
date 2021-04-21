@@ -21,7 +21,7 @@
         <header class="header">
             <nav class="navbar">
                 <div class="grid wide header__navbar">
-                    <a href="#" class="navbar__link">
+                    <a href="../index/index.html" class="navbar__link">
                         <img src="../assets/img/logo/logo.jpg" alt="" class="navbar__logo">
                     </a>
                     <div class="header__content">
@@ -343,7 +343,16 @@
                                     </li>
                                 </ul>
                             </div>
-                            <i class="fas fa-user navbar__login"></i>
+                            <a href="../user_info/index.html" class="user__info">
+                                <div class="info__content">
+                                    <span class="info__name info__item">
+                                        <i class="far fa-user icon__info"></i>
+                                        <span class="info__item-name">Khắc Tiềm</span>
+                                    </span>
+                                    <span class="info__item">10.000.000 Đ</span>
+                                </div>
+                            </a>
+                            <i style="display: none;" class="fas fa-user navbar__login"></i>
                             <i class="fas fa-bars navbar__bar"></i>
                         </div>
                     </div>
@@ -4434,10 +4443,20 @@
                     <i class="fas fa-times auth-form__icon-mobile"></i>
                 </div>
                 <ul class="nav__mobile-list">
-                    <li class="nav__mobile-item mobile-login__register login">
+                    <li class="nav__mobile-item mobile-login__register">
+                        <a href="../user_info/index.html" class="mobile__user-info">
+                            <div class="info__content">
+                                <span class="info__name info__item">
+                                    <i class="far fa-user icon__info"></i>
+                                    <span class="info__item-name">Khắc Tiềm: <span class="info__item">10.000.000 Đ</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="display: none;" class="nav__mobile-item mobile-login__register login">
                         <span>Đăng nhập</span>
                     </li>
-                    <li class="nav__mobile-item mobile-login__register register">
+                    <li style="display: none;" class="nav__mobile-item mobile-login__register register">
                         <span>Đăng ký</span>
                     </li>
                     <li class="nav__mobile-item">

@@ -246,6 +246,46 @@
 .navbar__icon-seacrh:hover{
     color: var(--text_color);
 }
+.user__info{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: var(--text_color);
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.user__info:hover{
+    color: var(--primary_color);
+}
+.icon__info{
+    font-size: 14px;
+    margin-right: 3px;
+}
+.info__content{
+    display: flex;
+    flex-direction: column;
+}
+.info__item{
+}
+.mobile__user-info{
+    color: var(--text_color-menu);
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all 0s;
+}
+.mobile__user-info:hover{
+    color: var(--text_color);
+}
+.mobile__user-info .icon__info{
+    font-size: 18px;
+}
+
+
+
+
+
 .auth-form{
     width: 100%;
     max-width: 600px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rút tiền từ ví</title>
+    <title>Ví Điện Tử TKSR - Siêu Ứng Dụng Thanh Toán số 1 Việt Nam</title>
     <link rel="icon" href="../assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/service.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/responsive__service.css">
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="app">
@@ -345,7 +342,16 @@
                                     </li>
                                 </ul>
                             </div>
-                            <i class="fas fa-user navbar__login"></i>
+                            <a href="#" class="user__info">
+                                <div class="info__content">
+                                    <span class="info__name info__item">
+                                        <i class="far fa-user icon__info"></i>
+                                        <span class="info__item-name">Khắc Tiềm</span>
+                                    </span>
+                                    <span class="info__item">10.000.000 Đ</span>
+                                </div>
+                            </a>
+                            <i style="display: none;" class="fas fa-user navbar__login"></i>
                             <i class="fas fa-bars navbar__bar"></i>
                         </div>
                     </div>
@@ -358,388 +364,11 @@
                     <li class="oriented-item">
                         <a href="../index/index.html" class="oriented-item oriented-item__link">Trang chủ</a>
                     </li>
-                    <li class="oriented-item">Dịch vụ</li>
-                    <li class="oriented-item">Rút tiền</li>
+                    <li class="oriented-item">Tiện ích</li>
+                    <li class="oriented-item">Thông tin ví</li>
                 </ul>
             </div>
         </nav>
-        <section class="rechargecard">
-            <div class="grid wide container__rechargecard">
-                <h3 class="rechargecard__title">
-                    Rút tiền trong ví
-                </h3>
-                <div class="grid container__over">
-                    <ul class="row list__card">
-                        <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item card__item-active">
-                                <div class="card__item-logo">
-                                    <img src="./img/icon3.svg" alt="">
-                                </div>
-                                <div class="card__item-text">
-                                    Rút về ATM
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col l-2-4 m-4 c-6">
-                            <div class="card__item">
-                                <div class="card__item-logo">
-                                    <img src="./img/icon1.svg" alt="">
-                                </div>
-                                <div class="card__item-text">
-                                    Thẻ liên kết
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="container__pay">
-                        <div class="pay">
-                            <h3 class="rechargecard__content-title">
-                                Rút về ATM
-                            </h3>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Chọn ngân hàng: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <select class="select__input">
-                                        <option>Techcombank</option>
-                                        <option>Vietcombank</option>
-                                        <option>Agribank</option>
-                                        <option>BIDV</option>
-                                        <option>SHB</option>
-                                        <option>ACB</option>
-                                        <option>MBBank</option>
-                                        <option>VietinBank</option>
-                                        <option>Sacombank</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Số thẻ/ Số tài khoản: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập số thẻ/ Số tài khoản">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Số tiền cần rút: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập số tiền cần rút">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Lời nhắn: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập lời nhắn của bạn">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Nhập mật khẩu thanh toán cấp 2: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập mật khẩu thanh toán cấp 2">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="buy">
-                                <a href="#" class="btn__card-buy">
-                                    Rút
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pay">
-                            <h3 class="rechargecard__content-title">
-                                Chọn thẻ giao dịch
-                            </h3>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Chọn thẻ: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <select class="select__input">
-                                        <option>Techcombank **** 7801</option>
-                                        <option>Vietcombank ****8909</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Số tiền cần rút: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập số tiền cần rút">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="row list__select">
-                                <div class="col l-6 m-6 c-12 list__select-text">
-                                    Nhập mật khẩu thanh toán cấp 2: 
-                                </div>
-                                <div class="col l-6 m-6 c-12 list__select-input">
-                                    <input class="select__input" placeholder="Nhập mật khẩu thanh toán cấp 2">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="buy">
-                                <a href="#" class="btn__card-buy">
-                                    Rút
-                                </a>
-                            </div>
-                            <h3 class="rechargecard__content-title title__margin-top">
-                                Bạn muốn liên kết thẻ ATM
-                                <div class="buy">
-                                    <a href="../cardlink/index.html" class="btn__card-buy">
-                                        Liên kết ngay
-                                    </a>
-                                </div>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid wide">
-                <h3 class="rechargecard__history-title">
-                    Lịch sử rút tiền
-                </h3>
-                <div class="row rechargecard__history-select">
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                        <input type="date" class="select__input">
-                        </input>
-                    </div>
-                    <div class="col l-2-4 m-12 c-12 rechargecard__history-item btn__history">
-                        <a href="#" class="btn__search-history">
-                            <i class="fas fa-search search-history"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid rechargecard__history-content">
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TK nguồn
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Số tiền
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Số dư
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Lời nhắn
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Ngày rút
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TKSR
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        1.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        10.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Rut tien mua laptop
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TKSR
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        1.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        9.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Rut tien mua laptop
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TKSR
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        1.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        8.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Rut tien mua laptop
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TKSR
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        1.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        7.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Rut tien mua laptop
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-                <div class="row history-content">
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        TKSR
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        1.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        6.000.000
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        Rut tien mua laptop
-                    </div>
-                    <div class="col l-2-4 m-2-4 c-2-4 history-title__item">
-                        23/03/2021
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="security">
-            <div class="grid wide container container__security">
-                <div class="section__title">
-                    <h1 class="section__title-text">
-                        Thanh toán an toàn - Bảo mật tuyệt đối
-                    </h1>
-                </div>
-                <div class="security__nav-header">
-                    <ul class="security__nav">
-                        <li class="security__nav-item security__active">
-                            <span class="security__nav-text">
-                                Bảo chứng ngân hàng
-                            </span>
-                        </li>
-                        <li class="security__nav-item">
-                            <span class="security__nav-text">
-                                Bảo mật đa tầng
-                            </span>
-                        </li>
-                        <li class="security__nav-item">
-                            <span class="security__nav-text">
-                                Đạt chuẩn quốc tế
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row security__content fade security__content-active">
-                    <div class="col l-6 m-6 c-12 security__content-text">
-                        <ul class="security__content-text__list">
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Tiền của bạn trong Ví TKSR là TIỀN THẬT và được bảo chứng 100% bởi các NGÂN HÀNG đang hợp tác với Ví TKSR.
-                                </div>
-                            </li>
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Người dùng TKSR có thể Nạp/Rút tiền từ ngân hàng liên kết bất kỳ lúc nào.
-                                </div>
-                            </li>
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    TKSR đã liên kết trực tiếp với 25 ngân hàng lớn và các tổ chức thẻ quốc tế Visa/Master/JCB.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-6 m-6 c-12 security__content-img">
-                        <img src="../assets/img/BaoMat1.jpg" alt="" class="security__content-img-item">
-                    </div>
-                </div>
-                <div class="row security__content">
-                    <div class="col l-6 m-6 c-12 security__content-text">
-                        <ul class="security__content-text__list">
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Để đăng nhập, cần nhập mật khẩu 6 số và mã OTP được gửi đến điện thoại. Mỗi lần thanh toán đều cần nhập lại mật khẩu.
-                                </div>
-                            </li>
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Ứng dụng tự khóa sau 5 phút nếu không sử dụng.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-6 m-6 c-12 security__content-img">
-                        <img src="../assets/img/BaoMat2.jpg" alt="" class="security__content-img-item">
-                    </div>
-                </div>
-                <div class="row security__content">
-                    <div class="col l-6 m-6 c-12 security__content-text">
-                        <ul class="security__content-text__list">
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Công nghệ bảo mật của Ví MoMo đáp ứng các tiêu chuẩn quốc tế khắt khe nhất trong ngành tài chính ngân hàng, đạt chứng nhận bảo mật toàn cầu PCI DSS cấp độ cao nhất.                                </div>
-                            </li>
-                            <li class="security__content-item">
-                                <div class="security__content-item-icon">
-                                    <img src="../assets/img/logo/check.svg" alt="">
-                                </div>
-                                <div class="security__content-item-text">
-                                    Công nghệ mã hóa đường truyền SSL/TLS đạt chứng nhận quốc tế GlobalSign.                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-6 m-6 c-12 security__content-img">
-                        <img src="../assets/img/BaoMat3.jpg" alt="" class="security__content-img-item">
-                    </div>
-                </div>
-            </div>
-        </section>
         <footer class="footer">
             <div class="grid wide container footer__container">
                 <div class="row footer__list">
@@ -905,10 +534,20 @@
                     <i class="fas fa-times auth-form__icon-mobile"></i>
                 </div>
                 <ul class="nav__mobile-list">
-                    <li class="nav__mobile-item mobile-login__register login">
+                    <li class="nav__mobile-item mobile-login__register">
+                        <a href="#" class="mobile__user-info">
+                            <div class="info__content">
+                                <span class="info__name info__item">
+                                    <i class="far fa-user icon__info"></i>
+                                    <span class="info__item-name">Khắc Tiềm: <span class="info__item">10.000.000 Đ</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="display: none;" class="nav__mobile-item mobile-login__register login">
                         <span>Đăng nhập</span>
                     </li>
-                    <li class="nav__mobile-item mobile-login__register register">
+                    <li style="display: none;" class="nav__mobile-item mobile-login__register register">
                         <span>Đăng ký</span>
                     </li>
                     <li class="nav__mobile-item">
@@ -1085,7 +724,5 @@
         </a>
     </div>
     <script src="../assets/js/active.js"></script>
-    <script src="./active.js"></script>
-    <script src="../assets/js/service.js"></script>
 </body>
 </html>

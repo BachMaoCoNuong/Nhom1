@@ -18,9 +18,6 @@
     display: flex;
     transition: all 0.8s ease;
 }
-.slide__img{
-
-}
 .slide__mobile{
     display: none;
 }

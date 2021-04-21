@@ -247,4 +247,7 @@
     .tutorial__btn-item + .tutorial__btn-item {
         margin-left: 0px;
     }
+    .user__info{
+        display: none;
+    }
 }
