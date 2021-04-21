@@ -1,0 +1,22 @@
+.container__pay{
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.container__over{
+    overflow: hidden;
+}
+.rechargecard__history-select{
+    justify-content: center;
+}
+.title__margin-top{
+    border-radius: 8px;
+    border: solid 1px #ccc;
+    width: fit-content;
+    margin: 50px auto 0 auto;
+    padding: 18px 24px;
+    background-color: var(--background_color);
+    box-shadow: 8px 8px 0 rgb(0, 0, 0, 4%);
+}
+.title__margin-top a{
+    margin-top: 12px;
+}

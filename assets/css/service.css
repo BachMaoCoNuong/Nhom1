@@ -64,7 +64,7 @@
 .list__select{
     width: 100%;
     max-width: 1000px;
-    margin: 30px auto 0 auto !important;
+    margin: 20px auto 0 auto !important;
     display: flex;
     align-items: center;
 }
