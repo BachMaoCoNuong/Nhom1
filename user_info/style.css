@@ -106,3 +106,37 @@
 .form__info{
     min-width: 550px;
 }
+.change{
+    width: 100%;
+    height: 100%;
+    padding: 6px 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text_color);
+}
+.form__change .table__category-item{
+    background-color: #fff;
+    color: var(--text_color);
+}
+.confirm{
+    width: fit-content;
+    color: var(--background_color-menu);
+    background-color: var(--primary_color);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 15px;
+    width: 250px;
+    display: block;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.confirm:hover{
+    background-color: var(--primary_color-hover);
+}
+.info__not-change{
+    background-color: var(--background_color) !important;
+    color: var(--text_color_medium) !important;
+}
