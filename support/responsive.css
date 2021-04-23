@@ -9,12 +9,17 @@
     }
     .list__help{
         justify-content: flex-start;
-    }
-    .list__help-item + .list__help-item{
-        margin-left: 5px;
+        width: fit-content;
+        margin: 0 auto;
     }
     .list__help-item{
-        font-size: 14px;
+        font-size: 15px;
+    }
+    .card__header{
+        font-size: 15px;
+    }
+    .card__content{
+        font-size: 0.9rem;
     }
 }
 /* >= 740px and < 1024px*/
