@@ -107,4 +107,15 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         })
     })();
+    (function(){
+        const messenger = $('.icon__chat');
+        const chat = $('.chat__container');
+        const close = $('.chat__close');
+        messenger.onclick = function(){
+            chat.classList.toggle('chat__container-active');
+        }
+        close.onclick = function(){
+            chat.classList.remove('chat__container-active');
+        }
+    })()
 },false)

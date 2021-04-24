@@ -14,12 +14,18 @@
         max-width: 200px !important;
     }
     .scroll{
-        left: 80% !important;
+        left: 84% !important;
+    }
+    .chat__container.chat__container-active{
+        --width: 290px !important;
     }
 }
 
 /* <= 739px */
 @media (max-width: 46.1875em){
+    .chat{
+        left: 70% !important;
+    }
     .scroll{
         left: 86%;
     }
@@ -249,5 +255,17 @@
     }
     .user__info{
         display: none;
+    }
+    .chat{
+        left: 81%;
+    }
+}
+/* <= 500px */
+@media (max-width: 31.25em){
+    .chat{
+        left: 80% !important;
+    }   
+    .chat__container.chat__container-active{
+        --width: 350px;
     }
 }

@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded",function(){
                             slide__close.style.height = `0px`;
                             card__close[0].classList.remove('card__active');
                         },1)
-                        
                     }
                     setTimeout(function(){
                         card[index].classList.add('card__active');
