@@ -258,6 +258,13 @@ html{
     flex: 1;
     overflow-y: scroll;
     max-height: var(--height);
+    padding: 8px 12px 12px 12px;
+}
+.chat__time{
+    color: var(--text_color_medium);
+    font-size: 12.5px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .chat__input{
     border-top: solid 1px #ccc;
@@ -286,9 +293,7 @@ html{
 }
 .chat__send i{
     font-size: 20px;
-}
-.chat__user{
-    padding: 12px 12px;
+    color: var(--text_color);
 }
 .chat__history{
     display: flex;
