@@ -117,5 +117,8 @@ document.addEventListener("DOMContentLoaded",function(){
         close.onclick = function(){
             chat.classList.remove('chat__container-active');
         }
+        chatWindow = $('.chat__user'); 
+        let xH = chatWindow.scrollHeight; 
+        chatWindow.scrollTo(0, xH);
     })()
 },false)

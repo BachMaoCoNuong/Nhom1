@@ -256,7 +256,7 @@ html{
 .chat__user{
     --height: calc(75vh - 107px);
     flex: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
     max-height: var(--height);
 }
 .chat__input{
