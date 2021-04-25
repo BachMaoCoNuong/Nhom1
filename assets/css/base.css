@@ -254,7 +254,10 @@ html{
     flex-direction: column;
 }
 .chat__user{
+    --height: calc(75vh - 107px);
     flex: 1;
+    overflow-y: auto;
+    max-height: var(--height);
 }
 .chat__input{
     border-top: solid 1px #ccc;
