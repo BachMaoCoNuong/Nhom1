@@ -290,6 +290,7 @@ html{
     cursor: pointer;
     border: none;
     transition: all 0.2s ease;
+    outline: none;
 }
 .chat__send i{
     font-size: 20px;
