@@ -538,3 +538,40 @@
 .invalid input:hover,.invalid input:focus{
     background-color: var(--background_color-menu);
 }
+.form-group{
+    position: relative;
+}
+.PasswordField_iconButton__1LFBr{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    color: var(--primary_color);
+    cursor: pointer;
+    display: none;
+}
+.PasswordField_iconButton__1LFBr.view__active{
+    display: block;
+}
+.Input_icon__3bJ0I{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    color: #f33a58;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.invalid .Input_icon__3bJ0I{
+    animation-name: ani;
+    animation-duration: 0.4s;
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes ani {
+    0% {transform: translateX(4px);}
+    25% {transform: translateX(-4px);}
+    50% {transform: translateX(4px);}
+    75% {transform: translateX(-4px);}
+    100% {transform: translateX(0);}
+}

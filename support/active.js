@@ -28,9 +28,17 @@ document.addEventListener("DOMContentLoaded",function(){
         setTimeout(function(){
             help__content[0].style.height = `fit-content`;
         },time)
+        let status = true; // xử lý ng dùng click nhiều lần phá 
         help__header.forEach((header__click,index) => {
             header__click.onclick = function(){
                 if(card[index].classList.contains('card__active') == false){
+                    if(status == false){
+                        return false;
+                    }
+                    status = false;
+                    card[index].addEventListener('webkitTransitionEnd',function(){
+                        status = true;
+                    })
                     const card__close = $$('.help__content-item__active .card__active');
                     if(card__close.length > 0){
                         const slide__close = $('.help__content-item__active .card__active .card__content');
@@ -51,6 +59,13 @@ document.addEventListener("DOMContentLoaded",function(){
                     },time + 1)
                 }
                 else{   
+                    if(status == false){
+                        return false;
+                    }
+                    status = false;
+                    card[index].addEventListener('webkitTransitionEnd',function(){
+                        status = true;
+                    })
                     const ani = $('.help__content-item__active .card__active .card__content .card__bug');
                     help__content[index].style.height = ani.offsetHeight + 'px';
                     setTimeout(function(){
