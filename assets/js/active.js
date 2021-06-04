@@ -111,6 +111,13 @@ document.addEventListener("DOMContentLoaded",function(){
     })();
     /* Chat */
     (function(){
+        /* Chat fb */
+        const ChatFB = $('circle');
+        ChatFB.fill = `#a50064`;
+
+
+
+
         const messenger = $('.icon__chat');
         const chat = $('.chat__container');
         const close = $('.chat__close');
