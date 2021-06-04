@@ -112,13 +112,7 @@ document.addEventListener("DOMContentLoaded",function(){
     /* Chat */
     (function(){
         /* Chat fb */
-        const ChatFB = $('circle');
-        ChatFB.setAttribute("fill", "#a50064");
-
-
-
-
-        /* const messenger = $('.icon__chat');
+        const messenger = $('.icon__chat');
         const chat = $('.chat__container');
         const close = $('.chat__close');
         var today = new Date();
@@ -171,6 +165,6 @@ document.addEventListener("DOMContentLoaded",function(){
         }
         chatWindow = $('.chat__user'); 
         let xH = chatWindow.scrollHeight; 
-        chatWindow.scrollTo(0, xH); */
+        chatWindow.scrollTo(0, xH);
     })()
 },false)
