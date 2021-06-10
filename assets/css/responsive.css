@@ -24,7 +24,7 @@
 /* <= 739px */
 @media (max-width: 46.1875em){
     .chat{
-        left: 70% !important;
+        left: 5% !important;
     }
     .scroll{
         left: 86%;
@@ -257,13 +257,13 @@
         display: none;
     }
     .chat{
-        left: 81%;
+        left: 5%;
     }
 }
 /* <= 500px */
 @media (max-width: 31.25em){
     .chat{
-        left: 80% !important;
+        left: 5% !important;
     }   
     .chat__container.chat__container-active{
         --width: 350px;

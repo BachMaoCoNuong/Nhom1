@@ -172,7 +172,7 @@ html{
 .chat{
     position: fixed;
     top: 88%;
-    left: 88%;
+    left: 5%;
     z-index: 4;
     transition: all 0.3s ease;
 }
@@ -195,7 +195,7 @@ html{
     --height: 0vh;
     position: absolute;
     top: calc( -1 * var(--height) - 10px);
-    left: calc(-1 * var(--width) + 60px);
+    /* left: calc(-1 * var(--width) + 60px); */
     height: var(--height);
     background-color: var(--background_color-menu);
     border-radius: 10px;
