@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đổi mật khẩu đăng nhập</title>
+    <title>Lịch sử giao dịch</title>
     <link rel="icon" href="../assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -367,7 +367,6 @@
                         <a href="../index/index__user.html" class="oriented-item oriented-item__link">Trang chủ</a>
                     </li>
                     <li class="oriented-item">Thông tin ví</li>
-                    <li class="oriented-item">Đổi mật khẩu</li>
                 </ul>
             </div>
         </nav>
@@ -409,7 +408,7 @@
                                     </a>
                                 </li>
                                 <li class="bar__list-item">
-                                    <a href="./history.html" class="bar__list-text">
+                                    <a href="#" class="bar__list-text">
                                         <span>
                                             Lịch sử giao dịch gần đây
                                         </span>
@@ -429,43 +428,193 @@
                 <div class="info__bug">
                     <div class="form">
                         <h3 class="bar__title title__info">
-                            Đổi mật khẩu đăng nhập
+                            Lịch sử giao dịch
                         </h3>
-                        <div class="form__container">
-                            <div class="form__info form__change">
-                                <ul class="table__category">
-                                    <li class="table__category-item info__not-change">
-                                        <span>Tài khoản</span>
-                                    </li>
-                                    <li class="table__category-item">
-                                        <span>Mật khẩu cũ:</span>
-                                    </li>
-                                    <li class="table__category-item">
-                                        <span>Mật khẩu mới:</span>
-                                    </li>
-                                    <li class="table__category-item">
-                                        <span>Nhập lại mật khẩu:</span>
-                                    </li>
-                                </ul>
-                                <ul class="table__category">
-                                    <li class="table__category-item info__not-change">
-                                        <span>matxac2k1</span>
-                                    </li>
-                                    <li class="table__category-item">
-                                        <input type="password" class="change" placeholder="Nhập mật khẩu cũ"></input>
-                                    </li>
-                                    <li class="table__category-item">
-                                        <input type="password" class="change" placeholder="Nhập mật khẩu mới">
-                                    </li>
-                                    <li class="table__category-item">
-                                        <input type="password" class="change" placeholder="Nhập lại mật khẩu"></input>
-                                    </li>
-                                </ul>
+                        <form action="" class="history__search">
+                            <div class="row rechargecard__history-select container">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <input type="text" placeholder="Mã giao dịch" class="select__input">
+                                    </input>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <input type="date" class="select__input">
+                                    </input>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <input type="date" class="select__input">
+                                    </input>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item btn__history">
+                                    <button href="#" class="btn__search-history">
+                                        <i class="fas fa-search search-history"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form__container container">
+                            <div class="form__history">
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>STT</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Mã giao dịch</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Loại dịch vụ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Số tiền giao dịch</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Ngày giao dịch</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>0977263104</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>Ky82313744898</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>F897472</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>B091830484</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>5</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>7</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>8</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nạp thẻ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>23/03/2021 23:45:25</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="confirm__change">
-                            <a href="#" class="confirm">Thay đổi</a>
-                        </div>
+                        <form class="btn__n container">
+                            <div class="btn__next">
+                                <button class="btn__next-item"><i class="fas fa-chevron-left"></i></button>
+                                <span class="slide__number">1</span>
+                                <button class="btn__next-item"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </form>
                     </div>
                     <div class="form">
                         <h3 class="bar__titel title__info">
