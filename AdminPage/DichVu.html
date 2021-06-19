@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý dịch vụ</title>
+    <link rel="icon" href="../assets/img/logo/logo.jpg">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide container">
+                <img src="../assets/img/logo/logo.jpg" alt="" class="navbar__logo">
+                <div class="header__title">
+                    Chào Tiềm bạn là nhà phát triển
+                </div>
+            </div>
+        </header>
+        <nav class="oriented">
+            <div class="grid wide">
+                <ul class="oriented__list">
+                    <li class="oriented-item">
+                        <a href="../index/index__user.html" class="oriented-item oriented-item__link">Trang chủ</a>
+                    </li>
+                    <li class="oriented-item">Quản lý dịch vụ</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="info">
+            <div class="grid wide info__container">
+                <div class="side__bar">
+                    <div class="side__bar-content">
+                        <div class="side__bar-item">
+                            <h3 class="bar__title">
+                                Tuỳ chỉnh
+                            </h3>
+                            <ul class="bar__list">
+                                <li class="bar__list-item">
+                                    <a href="./index.html" class="bar__list-text">
+                                        <span>
+                                            Quản lý tài khoản
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="" class="bar__list-text  bar__list-text__active">
+                                        <span>
+                                            Quản lý dịch vụ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="./TheNap.html" class="bar__list-text">
+                                        <span>
+                                            Quản lý thẻ nạp
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="./HoaDon.html" class="bar__list-text">
+                                        <span>
+                                            Quản lý hoá đơn
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="" class="bar__list-text">
+                                        <span>
+                                            Phản hồi khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="" class="bar__list-text">
+                                        <span>
+                                            Chat với khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="bar__list-item">
+                                    <a href="../index/index.html" class="bar__list-text">
+                                        <span>
+                                            Đăng xuất
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__bug">
+                    <div class="form__update-the">
+                        <div class="form info__thenap">
+                            <h3 class="bar__titel title__info">
+                                Tuỳ chỉnh dịch vụ
+                            </h3>
+                            <div class="form__container">
+                                <form class="form__info">
+                                    <div class="row rechargecard__history-select container">
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item">
+                                            <input type="text" placeholder="Mã khách hàng" class="select__input form__update-the">
+                                            </input>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item">
+                                            <input type="text" placeholder="Tài khoản thanh toán" class="select__input form__update-the">
+                                            </input>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item">
+                                            <input type="text" placeholder="Số tiền cần thanh toán" class="select__input form__update-the">
+                                            </input>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item">
+                                            <select class="select__input form__update-the">
+                                                <option>Dịch vụ</option>
+                                                <option>Điện</option>
+                                                <option>Nước</option>
+                                                <option>vay tiêu dùng</option>
+                                                <option>Truyền hình</option>
+                                                <option>Internet</option>
+                                                <option>Chung cư</option>
+                                            </select>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item btn__history">
+                                            <button class="btn__search-history btn__full">
+                                                Thêm
+                                            </button>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item btn__history">
+                                            <button class="btn__search-history btn__full">
+                                                Sửa
+                                            </button>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 rechargecard__history-item btn__history">
+                                            <button class="btn__search-history btn__full">
+                                                Xoá
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="form info__thenap no__margin">
+                            <h3 class="bar__titel title__info  margin__top">
+                                Thông tin dịch vụ
+                            </h3>
+                            <div class="form__container">
+                                <div class="form__info">
+                                    <ul class="table__category">
+                                        <li class="table__category-item">
+                                            <span>Dịch vụ</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Điện</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Nước</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Internet</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Truyền hình</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Chung cư</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>Vay tiêu dùng</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="table__category">
+                                        <li class="table__category-item">
+                                            <span>Số lượng
+                                            </span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="table__category-item">
+                                            <span>1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h3 class="bar__title title__info">
+                            Danh sách dịch vụ chờ thanh toán
+                        </h3>
+                        <form action="" class="history__search">
+                            <div class="row rechargecard__history-select container">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <input type="text" placeholder="Mã khách hàng" class="select__input">
+                                    </input>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <input type="text" placeholder="Tài khoản" class="select__input">
+                                    </input>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
+                                    <select class="select__input">
+                                        <option>Dịch vụ</option>
+                                            <option>Điện</option>
+                                            <option>Nước</option>
+                                            <option>vay tiêu dùng</option>
+                                            <option>Truyền hình</option>
+                                            <option>Internet</option>
+                                            <option>Chung cư</option>
+                                    </select>
+                                </div>
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item btn__history">
+                                    <button class="btn__search-history">
+                                        <i class="fas fa-search search-history"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form__container container">
+                            <div class="form__history">
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>STT</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Mã khách hàng</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Dịch vụ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Tiền thanh toán</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Tài khoản thanh toán</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>0977263104</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Điện</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>KhacTiem1</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>82313744898</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Nước</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>MatXac_3002</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>2425232312313</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Vay tiêu dùng</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>89Khac</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>091830484</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Truyền hình</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>VNM</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>5</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Internet</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>AnhDaGia</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Truyền hình</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>TuDauMaRa</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>7</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Chung cư</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Mobifone</span>
+                                    </div>
+                                </div>
+                                <div class="table__history">
+                                    <div class="table__history-item">
+                                        <span>8</span>
+                                    </div>
+                                    <div class="table__history-item" title="0977263104">
+                                        <span>A091824811</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Truyền hình</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>800.000đ</span>
+                                    </div>
+                                    <div class="table__history-item">
+                                        <span>Viettel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="btn__n container">
+                            <div class="btn__next">
+                                <button class="btn__next-item"><i class="fas fa-chevron-left"></i></button>
+                                <span class="slide__number">1</span>
+                                <button class="btn__next-item"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="waning">
+                        <i>
+                            * Nỗ lực tiêu chí tăng số lượng khách hàng trong năm tới mục tiêu trên 1000 lượt thanh toán mỗi tháng, bán được 100 thẻ nạp mỗi tuần
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="grid wide container footer__container">
+                <div class="row footer__list">
+                    <div class="col l-3 m-6 c-12 footer__item">
+                        <div class="logo__footer">
+                            <img src="../assets/img/logo/logo.jpg" alt="" class="logo__footer-img">
+                            <div class="footer__text-head">
+                                Công ty cổ phần dịch vụ trực tuyến Trường Đại Học Sư Phạm Kỹ Thuật Hưng Yên
+                            </div>
+                            <div class="footer__text-care-txt">
+                                Trường Đại Học Sư Phạm Kỹ Thuật Hưng Yên cơ sở 2 Mỹ hào
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-0 footer__item">
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Về chúng tôi
+                            </a>
+                        </div>
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Blog
+                            </a>
+                        </div>
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Liên hệ
+                            </a>
+                        </div>
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Tuyển dụng
+                            </a>
+                        </div>
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Điều khoản điều lệ
+                            </a>
+                        </div>
+                        <div class="footer__care">
+                            <a href="#" class="footer__care-link">
+                                Chính sách quyền riêng tư
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 footer__item">
+                        <div class="footer__item-header">
+                            chăm sóc khách hàng
+                        </div>
+                        <div class="footer__item-content">
+                            Hotline: <span><a href="tel:1900 5454 41" target="_self" title="Gọi">1900 5454 41</a> (1000 đ/phút)</span>
+                        </div>
+                        <div class="footer__item-content">
+                            Email: <span>KhacTiem@gmail.com</span>
+                        </div>
+                        <div class="footer__item-content">
+                            Chúng tôi gọi đi: <span><a href="tel:036.233.5462" target="_self" title="Gọi">036.233.5462</a> 
+                                - 
+                                <a href="tel:012.345.6789" target="_self" title="Gọi">012.345.6789</a> </span>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 footer__item">
+                        <div class="footer__item-header">
+                            Hợp tác doanh nghiệp
+                        </div>
+                        <div class="footer__item-content">
+                            Hotline: <span>
+                                <a href="tel:(028) 710 22 222" target="_self" title="Gọi">(028) 710 22 222</a> (ext:5000)</span> 
+                        </div>
+                        <div class="footer__item-content">
+                            Email: <span>hotro.sme@mservice.com.vn</span> 
+                        </div>
+                        <div class="footer__item-content">
+                            Website: <span>business.tksr.vn</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer__download">
+                    <div class="app__download">
+                        <a href="#" class="footer__download-link">
+                            <img src="../assets/img/tai-appstore.jpg" alt="" class="footer__download-img">
+                        </a>
+                    </div>
+                    <div class="app__download">
+                        <a href="#" class="footer__download-link">
+                            <img src="../assets/img/tai-google-play.jpg" alt="" class="footer__download-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <div class="scroll">
+        <a href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</body>
+</html>
