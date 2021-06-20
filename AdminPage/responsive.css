@@ -18,6 +18,9 @@
     
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
+    .content__chitiet-active .img__chitiet{
+        width: 90%;
+    }
 }
 /* < 1024px */
 @media (max-width: 63.9375em){
@@ -49,5 +52,12 @@
     }
     .margin__top{
         margin-top: 20px;
+    }
+    .content__chitiet-active .img__chitiet{
+        width: 100%;
+    }
+    .img__icon{
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

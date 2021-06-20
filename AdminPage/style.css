@@ -288,3 +288,54 @@ header{
     margin-bottom: 10px;
     background-color: var(--text_color_medium);
 }
+.img__phanhoi{
+    width: 100%;
+    cursor: pointer;
+}
+.content__chitiet{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
+}
+.content__chitiet-active{
+    visibility: visible;
+    opacity: 1;
+}
+.img__chitiet{
+    width: 0%;
+}
+.content__chitiet-active .img__chitiet{
+    width: 80%;
+}
+.content__chitiet,.img__chitiet,.close__img{
+    transition: all ease 0.3s;
+}
+.close__img{
+    cursor: pointer;
+    color: var(--background_color-menu);
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -55px;
+}
+.close__img:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.img__icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+}

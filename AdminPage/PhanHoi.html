@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý hoá đơn</title>
+    <title>Phản hồi của khách hàng</title>
     <link rel="icon" href="../assets/img/logo/logo.jpg">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -32,7 +32,7 @@
                     <li class="oriented-item">
                         <a href="../index/index__user.html" class="oriented-item oriented-item__link">Trang chủ</a>
                     </li>
-                    <li class="oriented-item">Quản lý hoá đơn</li>
+                    <li class="oriented-item">Phản hồi của khách hàng</li>
                 </ul>
             </div>
         </nav>
@@ -67,14 +67,14 @@
                                     </a>
                                 </li>
                                 <li class="bar__list-item">
-                                    <a href="#" class="bar__list-text bar__list-text__active">
+                                    <a href="./HoaDon.html" class="bar__list-text">
                                         <span>
                                             Quản lý hoá đơn
                                         </span>
                                     </a>
                                 </li>
                                 <li class="bar__list-item">
-                                    <a href="./PhanHoi.html" class="bar__list-text">
+                                    <a href="#" class="bar__list-text  bar__list-text__active">
                                         <span>
                                             Phản hồi khách hàng
                                         </span>
@@ -101,27 +101,23 @@
                 <div class="info__bug">
                     <div class="form">
                         <h3 class="bar__title title__info">
-                            Danh sách hoá đơn
+                            Danh sách khách hàng phản hồi
                         </h3>
                         <form action="" class="history__search">
                             <div class="row rechargecard__history-select container">
-                                <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
                                     <input type="text" placeholder="Tên tài khoản" class="select__input">
                                     </input>
                                 </div>
-                                <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
-                                    <input type="text" placeholder="Mã hoá đơn" class="select__input">
-                                    </input>
-                                </div>
-                                <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
                                     <input type="date" class="select__input">
                                     </input>
                                 </div>
-                                <div class="col l-2-4 m-12 c-12 rechargecard__history-item">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item">
                                     <input type="date" class="select__input">
                                     </input>
                                 </div>
-                                <div class="col l-2-4 m-12 c-12 rechargecard__history-item btn__history">
+                                <div class="col l-3 m-12 c-12 rechargecard__history-item btn__history">
                                     <button href="#" class="btn__search-history">
                                         <i class="fas fa-search search-history"></i>
                                     </button>
@@ -138,19 +134,13 @@
                                         <span>Tên tài khoản</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>Mã hoá đơn</span>
+                                        <span>Nội dung</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>Loại dịch vụ</span>
+                                        <span>Hình ảnh</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>Ngày thanh toán</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>Số lượng</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>Tổng tiền</span>
+                                        <span>Ngày phản hồi</span>
                                     </div>
                                 </div>
                                 <div class="table__history">
@@ -161,19 +151,24 @@
                                         <span>0977263104</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>521505</span>
+                                        <span>- Hệ thống lỗi: <br></span>
+                                        <span>- Tôi không thể thanh toán khi không đăng nhập được tài khoản của mình mặc dù trước đó tôi đã đăng ký thành công</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>Chuyển tiền cá nhân</span>
+                                        <span>
+                                            <div class="phanhoi__img-content">
+                                                <img class="img__phanhoi" src="../assets/img/AnhMau.png" alt="">
+                                                <div class="content__chitiet">
+                                                    <div class="img__icon">
+                                                        <img class="img__chitiet" src="../assets/img/AnhMau.png" alt="">
+                                                        <i class="fas fa-times close__img"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </div>
                                     <div class="table__history-item">
                                         <span>23/03/2021 23:45:25</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>1</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>20.000đ</span>
                                     </div>
                                 </div>
                                 <div class="table__history">
@@ -184,65 +179,24 @@
                                         <span>0977263104</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>521505</span>
+                                        <span>- Hệ thống lỗi: <br></span>
+                                        <span>- Góp ý là TKSR hãy thành lập một kênh youtube hướng dẫn để sopport ae tốt hơn</span>
                                     </div>
                                     <div class="table__history-item">
-                                        <span>Nạp thẻ 10k Viettel</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>23/03/2021 23:45:25</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>1</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>20.000đ</span>
-                                    </div>
-                                </div>
-                                <div class="table__history">
-                                    <div class="table__history-item">
-                                        <span>3</span>
-                                    </div>
-                                    <div class="table__history-item" title="0977263104">
-                                        <span>0977263104</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>521505</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>Mua thẻ 10k Viettel</span>
+                                        <span>
+                                            <div class="phanhoi__img-content">
+                                                <img class="img__phanhoi" src="../assets/img/AnhMau2.png" alt="">
+                                                <div class="content__chitiet">
+                                                    <div class="img__icon">
+                                                        <img class="img__chitiet" src="../assets/img/AnhMau2.png" alt="">
+                                                        <i class="fas fa-times close__img"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </div>
                                     <div class="table__history-item">
                                         <span>23/03/2021 23:45:25</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>2</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>20.000đ</span>
-                                    </div>
-                                </div>
-                                <div class="table__history">
-                                    <div class="table__history-item">
-                                        <span>4</span>
-                                    </div>
-                                    <div class="table__history-item" title="0977263104">
-                                        <span>0977263104</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>521505</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>Thanh toán hoá đơn</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>23/03/2021 23:45:25</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>1</span>
-                                    </div>
-                                    <div class="table__history-item">
-                                        <span>10.000đ</span>
                                     </div>
                                 </div>
                             </div>
@@ -361,5 +315,6 @@
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
+    <script src="./active.js"></script>
 </body>
 </html>
