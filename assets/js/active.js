@@ -1,14 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
-    /* suggestions */
-    (function(){
-        const search__suggestions__input = $('.search-input');
-        const search__suggestions = $('.search__suggestions');
-        search__suggestions__input.onclick = function(){
-        search__suggestions.classList.toggle('search__suggestions-active');
-    }
-    })();
     /* login and register */
     (function(){
         const icon__login = $('.navbar__login');

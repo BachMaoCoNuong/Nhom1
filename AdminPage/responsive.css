@@ -1,5 +1,6 @@
 /* <= 380px  */
 @media (max-width:  23.75em){
+    
 }
 /* <= 739px */
 @media (max-width: 46.1875em){
@@ -8,6 +9,12 @@
     }
     .side__bar{
         padding-right: 13px !important;
+    }
+    .user{
+        width: 65px !important;
+    }
+    .chat__user{
+        padding: 4px;
     }
 }
 /* >= 740px and < 1024px*/
@@ -59,5 +66,23 @@
     .img__icon{
         top: 50%;
         transform: translateY(-50%);
+    }
+    .full__chat{
+        min-height: 450px;
+    }
+    .user{
+        width: 150px;
+    }
+    .user__content-items span{
+        padding-left: 5px;   
+    }
+    .full__chat {
+        max-height: 450px;
+    }
+    .form__chat{
+        margin-bottom: 90px;
+    }
+    .chat__content{
+        height: 450px;
     }
 }
