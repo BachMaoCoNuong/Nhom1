@@ -10,11 +10,49 @@
     .side__bar{
         padding-right: 13px !important;
     }
-    .user{
-        width: 65px !important;
-    }
     .chat__user{
         padding: 4px;
+    }
+    .btn__update{
+        flex-direction: column;
+    }
+    .btn__items{
+        margin-bottom: 8px;
+    }
+    .user{
+        width: 0px;
+        transition: all ease 0.3s;
+    }
+    .user:last-child{
+        border-left: none;
+    }
+    .info__chat-items:first-child{
+        width: 0px;
+    }   
+    .info__chat-items:first-child span{
+        display: none;
+    } 
+    .taskbar{
+        display: block;
+        position: relative;
+    }
+    .taskbar i{
+        color: #ccc;
+        cursor: pointer;
+        position: absolute;
+        left: 10px;
+        top: -1px;
+    }
+    .taskbar i:hover{
+        color: var(--while_color);
+    }
+    .hidden__icon{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .user__bar-active {
+        width: 180px;
+        border-right: solid 1px #ccc !important;
     }
 }
 /* >= 740px and < 1024px*/
@@ -70,9 +108,6 @@
     .full__chat{
         min-height: 450px;
     }
-    .user{
-        width: 150px;
-    }
     .user__content-items span{
         padding-left: 5px;   
     }
@@ -80,7 +115,7 @@
         max-height: 450px;
     }
     .form__chat{
-        margin-bottom: 90px;
+        margin-bottom: 130px;
     }
     .chat__content{
         height: 450px;

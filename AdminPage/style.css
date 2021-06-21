@@ -92,7 +92,7 @@ header{
     border-left: solid 1px #ccc;
 }
 .table__category:first-child{
-    width: 30%;
+    width: 40%;
 }
 .table__category:last-child{
     border-right: solid 1px #ccc;
@@ -284,9 +284,15 @@ header{
     margin-bottom: 10px;
 }
 .btn__full{
+    width: 100px;
+}
+.btn__update{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    margin-bottom: 10px;
-    background-color: var(--text_color_medium);
+}
+.btn__items{
+    padding: 0 5px;
 }
 .img__phanhoi{
     width: 100%;
@@ -346,7 +352,7 @@ header{
 }
 .full__chat{
     height: 100%;
-    max-height: 600px;
+    max-height: 550px;
 }
 .user{
     width: 250px;
@@ -377,8 +383,9 @@ header{
     background-color: rgba(204, 204, 204, 0.5);
 }
 .user__content-items span{
-    padding-left: 25px;
+    padding-left: 15px;
     transition: all ease 0.3s;
+    font-size: 14px;
 }
 .user__chat{
     flex: 1;
@@ -407,4 +414,25 @@ header{
 }
 .chat__input input{
     width: 100%;
+}
+.info__chat-items:first-child{
+    width: 250px;
+}
+.info__chat-items:last-child{
+    flex: 1;
+}
+.info__chat{
+    width: 100%;
+    display: flex;
+}
+.info__chat-items{
+    text-align: center;
+    background-color: #555;
+    color: var(--while_color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px 0;
+}
+.taskbar{
+    display: none;       
 }

@@ -60,4 +60,17 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         }
     })
+    const open = $('.open__items');
+    const close = $('.close__items');
+    const items = $('.user.full__chat');
+    open.onclick = function(){
+        items.classList.add('user__bar-active');
+        open.classList.add('hidden__icon');
+        close.classList.remove('hidden__icon');
+    }
+    close.onclick = function(){
+        items.classList.remove('user__bar-active');
+        open.classList.remove('hidden__icon');
+        close.classList.add('hidden__icon');
+    }
 },false)
