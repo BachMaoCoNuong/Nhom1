@@ -299,6 +299,7 @@ html{
 .chat__history{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .chat__history + .chat__history{
     margin-top: 15px;
@@ -321,6 +322,8 @@ html{
     padding: 6px 12px;
     margin-left: 10px;
     margin-right: 10px;
+    word-wrap: break-word;
+    max-width: 75%;
 }
 .user{
     flex-direction: row-reverse;

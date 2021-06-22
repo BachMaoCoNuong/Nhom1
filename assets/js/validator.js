@@ -1,198 +1,215 @@
-// Đối tượng `Validator`
-function Validator(options) {
-    function getParent(element, selector) {
-        while (element.parentElement) {
-            if (element.parentElement.matches(selector)) {
-                return element.parentElement;
-            }
-            element = element.parentElement;
-        }
+document.addEventListener("DOMContentLoaded",function(){
+    const input = document.querySelectorAll('.auth-form__input');
+    function remove_oninput(element){
+        var message = element.querySelector('.form-message');
+        message.innerText = '';
+        element.classList.remove('invalid');
     }
-
-    var selectorRules = {};
-
-    // Hàm thực hiện validate
-    function validate(inputElement, rule) {
-        var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
-        var errorMessage;
-
-        // Lấy ra các rules của selector
-        var rules = selectorRules[rule.selector];
-        
-        // Lặp qua từng rule & kiểm tra
-        // Nếu có lỗi thì dừng việc kiểm
-        for (var i = 0; i < rules.length; ++i) {
-            switch (inputElement.type) {
-                case 'radio':
-                case 'checkbox':
-                    errorMessage = rules[i](
-                        formElement.querySelector(rule.selector + ':checked')
-                    );
-                    break;
-                default:
-                    errorMessage = rules[i](inputElement.value);
-            }
-            if (errorMessage) break;
-        }
-        
-        if (errorMessage) {
-            errorElement.innerText = errorMessage;
-            getParent(inputElement, options.formGroupSelector).classList.add('invalid');
-        } else {
-            errorElement.innerText = '';
-            getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
-        }
-
-        return !errorMessage;
+    function add__blur(element,messages){
+        var message = element.querySelector('.form-message');
+        message.innerText = messages;
+        element.classList.add('invalid');
     }
-
-    // Lấy element của form cần validate
-    var formElement = document.querySelector(options.form);
-    if (formElement) {
-        // Khi submit form
-        formElement.onsubmit = function (e) {
-            e.preventDefault();
-            var isFormValid = true;
-            // Lặp qua từng rules và validate
-            if(e.submitter.classList.contains('auth-form__request')){
-                var container = [];
-                container.push(options.rules[0]);
-                container.push(options.rules[1]);
-                container.forEach(function (rule) {
-                    var inputElement = formElement.querySelector(rule.selector);
-                    var isValid = validate(inputElement, rule);
-                    if (!isValid) {
-                        isFormValid = false;
-                    }
-                });
-            }
-            else{
-                options.rules.forEach(function (rule) {
-                    var inputElement = formElement.querySelector(rule.selector);
-                    var isValid = validate(inputElement, rule);
-                    if (!isValid) {
-                        isFormValid = false;
-                    }
-                });
-            }
-
-            if (isFormValid) {
-                // Trường hợp submit với javascript
-                if (typeof options.onSubmit === 'function') {
-                    var enableInputs = formElement.querySelectorAll('[name]');
-                    var formValues = Array.from(enableInputs).reduce(function (values, input) {
-                        
-                        switch(input.type) {
-                            case 'radio':
-                                values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value;
-                                break;
-                            case 'checkbox':
-                                if (!input.matches(':checked')) {
-                                    values[input.name] = '';
-                                    return values;
-                                }
-                                if (!Array.isArray(values[input.name])) {
-                                    values[input.name] = [];
-                                }
-                                values[input.name].push(input.value);
-                                break;
-                            case 'file':
-                                values[input.name] = input.files;
-                                break;
-                            default:
-                                values[input.name] = input.value;
-                        }
-                        return values;
-                        
-                    }, {});
-                    options.onSubmit(formValues);
+    var isFormValidLogin = true;
+    var isFormValidRegister = true;
+    var isFormValidNumber = true;
+    input.forEach((blurs,index) =>{
+        blurs.onblur = function(){
+            if(index == 0){
+                function tests(){
+                    return input[0].value.length >= 5 ? undefined :  `Vui lòng nhập tối thiểu 5 kí tự`;
                 }
-                // Trường hợp submit với hành vi mặc định
-                else {
-                    formElement.submit();
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[0].parentElement,mess);
+                }
+            }
+            else if(index == 1){
+                function tests(){
+                    return input[1].value.length > 0  ? undefined :  `Vui lòng không bỏ trống trường này`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[1].parentElement,mess);
+                }
+            }
+            else if(index == 2){
+                function tests(){
+                    return input[2].value.length >= 5 ? undefined :  `Vui lòng nhập tối thiểu 5 kí tự`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[2].parentElement,mess);
+                }
+            }
+            else if(index == 3){
+                function tests(){
+                    return sdt(input[3].value)  ? undefined :  `Trường này phải là sdt`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[3].parentElement,mess);
+                }
+            }
+            else if(index == 4){
+                function tests(){
+                    return input[4].value.length >= 4  ? undefined :  `Hãy nhập mã gồm 4 ký tự`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[4].parentElement,mess);
                 }
             }
         }
-
-        // Lặp qua mỗi rule và xử lý (lắng nghe sự kiện blur, input, ...)
-        options.rules.forEach(function (rule) {
-
-            // Lưu lại các rules cho mỗi input
-            if (Array.isArray(selectorRules[rule.selector])) {
-                selectorRules[rule.selector].push(rule.test);
-            } else {
-                selectorRules[rule.selector] = [rule.test];
+        blurs.oninput = function(){
+            if(index == 0){
+                remove_oninput(input[0].parentElement);
+                isFormValidLogin = true;
             }
-
-            var inputElements = formElement.querySelectorAll(rule.selector);
-
-            Array.from(inputElements).forEach(function (inputElement) {
-               // Xử lý trường hợp blur khỏi input
-                inputElement.onblur = function () {
-                    validate(inputElement, rule);
+            if(index == 1){
+                remove_oninput(input[1].parentElement);
+                isFormValidLogin = true;
+            }
+            if(index == 2){
+                remove_oninput(input[2].parentElement);
+                isFormValidRegister = true;
+            }
+            if(index == 3){
+                remove_oninput(input[3].parentElement);
+                isFormValidRegister = true;
+            }
+            if(index == 4){
+                remove_oninput(input[4].parentElement);
+                isFormValidRegister = true;
+            }
+        }
+    })
+    const login = document.querySelector('.auth-form__submit-login');
+    const register = document.querySelector('.auth-form__submit-register');
+    const number = document.querySelector('.auth-form__submit-number');
+    number.onclick = function(){
+        for(var i = 0; i < input.length;i++){
+            if(i == 2){
+                function tests(){
+                    return input[2].value.length >= 5 ? undefined :  `Vui lòng nhập tối thiểu 5 kí tự`;
                 }
-
-                // Xử lý mỗi khi người dùng nhập vào input
-                inputElement.oninput = function () {
-                    var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
-                    errorElement.innerText = '';
-                    getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
-                } 
-            });
-        });
-    }
-
-}
-
-
-
-// Định nghĩa rules
-// Nguyên tắc của các rules:
-// 1. Khi có lỗi => Trả ra message lỗi
-// 2. Khi hợp lệ => Không trả ra cái gì cả (undefined)
-Validator.isRequired = function (selector, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value ? undefined :  message || 'Vui lòng nhập trường này'
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[2].parentElement,mess);
+                    isFormValidNumber = false;
+                }
+            }
+            else if(i == 3){
+                function tests(){
+                    return sdt(input[3].value)  ? undefined :  `Trường này phải là sdt`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[3].parentElement,mess);
+                    isFormValidNumber = false;
+                }
+            }
         }
-    };
-}
-
-Validator.isEmail = function (selector, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(value) ? undefined :  message || 'Trường này phải là email';
-        }
-    };
-}
-
-Validator.minLength = function (selector, min, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value.length >= min ? undefined :  message || `Vui lòng nhập tối thiểu ${min} kí tự`;
-        }
-    };
-}
-
-Validator.sdt = function (selector, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            var regex = /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/;
-            return regex.test(value) ? undefined :  message || 'Trường này phải là sdt';
-        }
-    };
-}
-
-Validator.isConfirmed = function (selector, getConfirmValue, message) {
-    return {
-        selector: selector,
-        test: function (value) {
-            return value === getConfirmValue() ? undefined : message || 'Giá trị nhập vào không chính xác';
+        if(isFormValidNumber == true){
+           
         }
     }
-}
+    register.onclick = function(){
+        for(var i = 0; i < input.length;i++){
+            if(i == 2){
+                function tests(){
+                    return input[2].value.length >= 5 ? undefined :  `Vui lòng nhập tối thiểu 5 kí tự`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[2].parentElement,mess);
+                    isFormValidRegister = false;
+                }
+            }
+            else if(i == 3){
+                function tests(){
+                    return sdt(input[3].value)  ? undefined :  `Trường này phải là sdt`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[3].parentElement,mess);
+                    isFormValidRegister = false;
+                }
+            }
+            else if(i == 4){
+                function tests(){
+                    return input[4].value.length >= 4  ? undefined :  `Hãy nhập mã gồm 4 ký tự`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[4].parentElement,mess);
+                    isFormValidRegister = false;
+                }
+            }
+        }
+        if(isFormValidRegister == true){
+           
+        }
+    }
+    login.onclick = function(evt){
+        for(var i = 0; i < input.length;i++){
+            if(i == 0){
+                function tests(){
+                    return input[0].value.length >= 5 ? undefined :  `Vui lòng nhập tối thiểu 5 kí tự`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[0].parentElement,mess);
+                    isFormValidLogin = false;
+                }
+            }
+            else if(i == 1){
+                function tests(){
+                    return input[1].value.length > 0  ? undefined :  `Vui lòng không bỏ trống trường này`;
+                }
+                if(tests() == null){
+                }
+                else{
+                    var mess = tests();
+                    add__blur(input[1].parentElement,mess);
+                    isFormValidLogin = false;
+                }
+            }
+        }
+        if(isFormValidLogin == true){
+           
+        }
+    }
+    function validateEmail(email) 
+    {
+        var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return regex.test(email);
+    }
+    function sdt(sdt) 
+    {
+        var regex = /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/;
+        return regex.test(sdt);
+    }
+},false)

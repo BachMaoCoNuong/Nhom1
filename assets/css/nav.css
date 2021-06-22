@@ -529,9 +529,9 @@
     font-size: 14px;
     margin-left: 5px;
 }
-.invalid input{
-    border-color: #f33a58;
-    background-color: #fdebee;
+.invalid input,.invalid textarea{
+    border-color: #f33a58 !important;
+    background-color: #fdebee !important;
     transition: all 0.2s ease;
 }
 .invalid input:focus{

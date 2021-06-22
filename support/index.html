@@ -344,7 +344,16 @@
                                     </li>
                                 </ul>
                             </div>
-                            <i class="fas fa-user navbar__login"></i>
+                            <a href="../user_info/index.html" class="user__info">
+                                <div class="info__content">
+                                    <span class="info__name info__item">
+                                        <i class="far fa-user icon__info"></i>
+                                        <span class="info__item-name">Khắc Tiềm</span>
+                                    </span>
+                                    <span class="info__item">10.000.000 Đ</span>
+                                </div>
+                            </a>
+                            <i style="display: none;" class="fas fa-user navbar__login"></i>
                             <i class="fas fa-bars navbar__bar"></i>
                         </div>
                     </div>
@@ -1232,17 +1241,24 @@
                             <form action="" class="auth__form">
                                 <div class="form__group">
                                     <label for="">Tiêu đề phản hồi: </label>
+                                    <svg class="Input_icon__3bJ0I" width="16" height="16" viewBox="0 0 16 16"><path d="M0 0h16v16H0V0z" fill="none"></path><path d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z" fill="currentColor"></path></svg>
                                     <input type="text" class="title__feedback">
+                                    <span class="form-message">
+                                    </span>
                                 </div>
                                 <div class="form__group">
                                     <label for="">Nội dung phản hồi: </label>
-                                    <textarea name="" id="" cols="30" rows="6"></textarea>
+                                    <svg class="Input_icon__3bJ0I" width="16" height="16" viewBox="0 0 16 16"><path d="M0 0h16v16H0V0z" fill="none"></path><path d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z" fill="currentColor"></path></svg>
+                                    <textarea class="title__feedback" name="" id="" cols="30" rows="6"></textarea>
+                                    <span class="form-message">
+                                    </span>
                                 </div>
                                 <div class="form__group">
                                     <label for="">Hình ảnh: </label>
-                                    <input type="file" class="title__feedback">
+                                    <input id="files" type="file">
+                                    <img id="image" />
                                 </div>
-                                <button class="auth-form__submit">
+                                <button type="button" class="auth-form__submit auth-form__submit-suport">
                                     Gủi phản hồi
                                 </button>
                             </form>
@@ -1671,41 +1687,8 @@
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // Mong muốn của chúng ta
-            Validator({
-                form: '#form-1',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.minLength('#password', 6)
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-            Validator({
-                form: '#form-2',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname__register', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.sdt('#sdt','Vui lòng nhập số điện thoại'),
-                Validator.minLength('#password__register', 6,'Nhập mã xác minh được gửi gồm 6 ký tự'),
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-        });
-    </script>
-    <script src="../assets/js/view__password.js"></script>
     <script src="../assets/js/active.js"></script>
     <script src="./active.js"></script>
-    <script src="../assets/js/validator.js"></script>
+    <script src="./validate.js"></script>
 </body>
 </html>

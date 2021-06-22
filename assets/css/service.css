@@ -90,6 +90,7 @@
 .list__select-input{
     flex: 0 0 65% ;
     max-width: 65% ;
+    position: relative;
 }
 .money{
     color: var(--primary_color);
@@ -109,6 +110,8 @@
     margin: 30px auto 0 auto;
     text-align: center;
     transition: all 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
 }
 .btn__card-buy:hover{
     background-color: var(--primary_color-hover);
@@ -156,6 +159,7 @@
     min-width: 900px !important;
     background-color: var(--background_color);
     border: solid 1px #ccc;
+    width: 100%;
 }
 .history-content:not(:last-child){
     border-bottom: none;

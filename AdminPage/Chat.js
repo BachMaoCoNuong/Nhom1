@@ -51,12 +51,15 @@ document.addEventListener("DOMContentLoaded",function(){
         chatWindow.scrollTo(0, xH);
     })()
     const user = $$('.user__content-items');
+    const name__chat = $('.info__chat-items.name__chat span');
     user.forEach((items,index) => {
         items.onclick = function(){
             if(this.classList.contains('user__active') == false){
                 const close__items = $('.user__content-items.user__active');
                 close__items.classList.remove('user__active');
                 this.classList.add('user__active');
+                const name = this.querySelector('span')
+                name__chat.innerHTML = name.textContent;
             }
         }
     })

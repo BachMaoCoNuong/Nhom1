@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/service.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/responsive__service.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="app">
@@ -344,7 +345,16 @@
                                     </li>
                                 </ul>
                             </div>
-                            <i class="fas fa-user navbar__login"></i>
+                            <a href="../user_info/index.html" class="user__info">
+                                <div class="info__content">
+                                    <span class="info__name info__item">
+                                        <i class="far fa-user icon__info"></i>
+                                        <span class="info__item-name">Khắc Tiềm</span>
+                                    </span>
+                                    <span class="info__item">10.000.000 Đ</span>
+                                </div>
+                            </a>
+                            <i style="display: none;" class="fas fa-user navbar__login"></i>
                             <i class="fas fa-bars navbar__bar"></i>
                         </div>
                     </div>
@@ -423,59 +433,64 @@
                     <h3 class="rechargecard__content-title">
                         Thẻ điện thoại Viettel
                     </h3>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Mệnh giá: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input menhgia">
-                                <option value="10000">Thẻ 10k</option>
-                                <option value="20000">Thẻ 20k</option>
-                                <option value="30000">Thẻ 30k</option>
-                                <option value="50000">Thẻ 50k</option>
-                                <option value="100000">Thẻ 100k</option>
-                                <option value="200000">Thẻ 200k</option>
-                                <option value="300000">Thẻ 300k</option>
-                                <option value="500000">Thẻ 500k</option>
-                                <option value="1000000">Thẻ 1 triệu</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Số lượng: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <select class="select__input soluong">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row list__select">
-                        <div class="col l-6 m-6 c-12 list__select-text">
-                            Nhập mật khẩu thanh toán cấp 2: 
-                        </div>
-                        <div class="col l-6 m-6 c-12 list__select-input">
-                            <input class="select__input" placeholder="Nhập mật khẩu thanh toán" type="password">
-                            <div class="row money">
-                                <i>Thành tiền: 10,000 VNĐ</i>
+                    <form action="">
+                        <div class="row list__select">
+                            <div class="col l-6 m-6 c-12 list__select-text">
+                                Mệnh giá: 
+                            </div>
+                            <div class="col l-6 m-6 c-12 list__select-input">
+                                <select class="select__input menhgia">
+                                    <option value="10000">Thẻ 10k</option>
+                                    <option value="20000">Thẻ 20k</option>
+                                    <option value="30000">Thẻ 30k</option>
+                                    <option value="50000">Thẻ 50k</option>
+                                    <option value="100000">Thẻ 100k</option>
+                                    <option value="200000">Thẻ 200k</option>
+                                    <option value="300000">Thẻ 300k</option>
+                                    <option value="500000">Thẻ 500k</option>
+                                    <option value="1000000">Thẻ 1 triệu</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="buy">
-                        <a href="#" class="btn__card-buy">
-                            Mua mã thẻ
-                        </a>
-                    </div>
+                        <div class="row list__select">
+                            <div class="col l-6 m-6 c-12 list__select-text">
+                                Số lượng: 
+                            </div>
+                            <div class="col l-6 m-6 c-12 list__select-input">
+                                <select class="select__input soluong">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row list__select">
+                            <div class="col l-6 m-6 c-12 list__select-text">
+                                Nhập mật khẩu thanh toán cấp 2: 
+                            </div>
+                            <div class="col l-6 m-6 c-12 list__select-input">
+                                <svg class="Input_icon__3bJ0I" width="16" height="16" viewBox="0 0 16 16"><path d="M0 0h16v16H0V0z" fill="none"></path><path d="M15.2 13.1L8.6 1.6c-.2-.4-.9-.4-1.2 0L.8 13.1c-.1.2-.1.5 0 .7.1.2.3.3.6.3h13.3c.2 0 .5-.1.6-.3.1-.2.1-.5-.1-.7zM8.7 12H7.3v-1.3h1.3V12zm0-2.7H7.3v-4h1.3v4z" fill="currentColor"></path></svg>
+                                <input class="select__input" placeholder="Nhập mật khẩu thanh toán" type="password">
+                                <span class="form-message">
+                                </span>
+                                <div class="row money">
+                                    <i>Thành tiền: 10,000 VNĐ</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <button type="button" href="#" class="btn__card-buy">
+                                Mua mã thẻ
+                            </button>
+                        </div>
+                    </form>
                 </div>
                 <h3 class="rechargecard__history-title">
                     Danh sách thẻ đã mua
@@ -1131,42 +1146,9 @@
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // Mong muốn của chúng ta
-            Validator({
-                form: '#form-1',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.minLength('#password', 6)
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-            Validator({
-                form: '#form-2',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname__register', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.sdt('#sdt','Vui lòng nhập số điện thoại'),
-                Validator.minLength('#password__register', 6,'Nhập mã xác minh được gửi gồm 6 ký tự'),
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-        });
-    </script>
-    <script src="../assets/js/view__password.js"></script>
     <script src="../assets/js/active.js"></script>
     <script src="./active.js"></script>
     <script src="../assets/js/service.js"></script>
-    <script src="../assets/js/validator.js"></script>
+    <script src="./validate.js"></script>
 </body>
 </html>

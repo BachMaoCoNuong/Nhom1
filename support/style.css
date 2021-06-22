@@ -140,9 +140,13 @@
 .form__group{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .title__feedback{
-    
+
+}
+#image{
+    width: 100%;
 }
 .feedback__content label{
     color: var(--text_color_medium);
@@ -170,4 +174,8 @@
 }
 .feedback__content input:hover,.feedback__content textarea:hover{
     border-color: var(--text_color_medium);
+}
+.Input_icon__3bJ0I{
+    top: 38px;
+    right: 10px;    
 }

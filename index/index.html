@@ -4462,7 +4462,7 @@
                     <div class="auth-form__forgot">
                         <a class="auth-form__forgot-link" href="#">Quên mật khẩu</a>
                     </div>
-                    <button class="auth-form__submit">
+                    <button type="button" class="auth-form__submit auth-form__submit-login">
                         đăng nhập
                     </button>
                     <div class="auth-form__go-register">
@@ -4497,7 +4497,7 @@
                         <input id="password__register" name = 'maxacthuc' type="text" class="auth-form__input" placeholder="Mã xác minh">
                         <span class="form-message"></span>
                     </div>
-                    <button class="auth-form__submit auth-form__request">Gửi Mã xác minh</button>
+                    <button type="button" class="auth-form__submit auth-form__submit-number auth-form__request">Gửi Mã xác minh</button>
                     <div class="auth-form__rules">
                         <span class="auth-form__rules-text">bằng việc đăng ký, bạn đã đồng ý với TKSR về </span>
                         <a href="#" class="auth-form__rules-link">
@@ -4506,7 +4506,7 @@
                         &
                         <a href="#" class="auth-form__rules-link">Chính sách bảo mật</a>
                     </div>
-                    <button class="auth-form__submit">
+                    <button type="button" class="auth-form__submit auth-form__submit-register">
                         đăng ký
                     </button>
                     <div class="auth-form__go-register">
@@ -4710,38 +4710,6 @@
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // Mong muốn của chúng ta
-            Validator({
-                form: '#form-1',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.minLength('#password', 6)
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-            Validator({
-                form: '#form-2',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                Validator.isRequired('#fullname__register', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.sdt('#sdt','Vui lòng nhập số điện thoại'),
-                Validator.minLength('#password__register', 6,'Nhập mã xác minh được gửi gồm 6 ký tự'),
-                ],
-                onSubmit: function (data) {
-                // Call API
-                console.log(data);
-                }
-            });
-        });
-    </script>
     <script src="../assets/js/view__password.js"></script>
     <script src="../assets/js/active.js"></script>
     <script src="../assets/js/activeIndex.js"></script>

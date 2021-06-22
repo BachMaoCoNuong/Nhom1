@@ -51,8 +51,11 @@
         opacity: 0;
     }
     .user__bar-active {
-        width: 180px;
+        width: 250px;
         border-right: solid 1px #ccc !important;
+    }
+    .chat__content{
+        overflow: hidden;
     }
 }
 /* >= 740px and < 1024px*/
