@@ -403,12 +403,12 @@
                         </li>
                     </ul>
                     <div class="container__pay">
-                        <div class="pay">
+                        <form class="pay">
                             <h3 class="rechargecard__content-title">
                                 Gạch thẻ 
                             </h3>
                             <div class="row list__select">
-                                <div class="col l-3 m-3 c-12">
+                                <div class="col l-3 m-3 c-12 list__input-items">
                                     <select class="select__input">
                                         <option>Viettel</option>
                                         <option>Vinaphone</option>
@@ -416,15 +416,19 @@
                                         <option>VietnamMobile</option>
                                     </select>
                                 </div>
-                                <div class="col l-3 m-3 c-12">
+                                <div class="col l-3 m-3 c-12 list__input-items">
                                     <input class="select__input" placeholder="Mã thẻ">
                                     </input>
+                                    <span class="form-message mess__code">
+                                    </span>
                                 </div>
-                                <div class="col l-3 m-3 c-12">
+                                <div class="col l-3 m-3 c-12 list__input-items">
                                     <input class="select__input" placeholder="Serial">
                                     </input>
+                                    <span class="form-message mess__code">
+                                    </span>
                                 </div>
-                                <div class="col l-3 m-3 c-12">
+                                <div class="col l-3 m-3 c-12 list__input-items">
                                     <select class="select__input">
                                         <option>Mệnh giá</option>
                                         <option>10,000đ</option>
@@ -437,17 +441,19 @@
                                         <option>500,000đ</option>
                                         <option>1,000,000đ</option>
                                     </select>
+                                    <span class="form-message mess__code">
+                                    </span>
                                 </div>
                             </div>
                             <div class="buy">
-                                <a href="#" class="btn__card-buy">
+                                <button type="button" class="btn__card-buy">
                                     Nạp
-                                </a>
+                                </button>
                             </div>
                             <h3 class="rechargecard__content-title">
                                 Bảng giá (Chiết khấu được cập nhật mới nhất)
                             </h3>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1271,5 +1277,6 @@
     <script src="../assets/js/active.js"></script>
     <script src="./script.js"></script>
     <script src="../assets/js/service.js"></script>
+    <script src="./validateCard.js"></script>
 </body>
 </html>

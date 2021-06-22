@@ -529,7 +529,7 @@
     font-size: 14px;
     margin-left: 5px;
 }
-.invalid input,.invalid textarea{
+.invalid input,.invalid textarea ,.invalid select{
     border-color: #f33a58 !important;
     background-color: #fdebee !important;
     transition: all 0.2s ease;

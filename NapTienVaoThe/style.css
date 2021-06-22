@@ -1,5 +1,5 @@
 .btn__card-buy{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .rechargecard__content-title{
     margin-top: 20px;
@@ -60,4 +60,19 @@
 }
 .title__margin-top a{
     margin-top: 12px;
+}
+.list__input-items{
+    margin-bottom: 10px;
+}
+.call__api-code,.call__api-code2{
+    margin-bottom: 0 !important;
+}
+.mess__code{
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+.Input_icon__3bJ0I{
+    top: 10px;
+    right: 20px;
 }
