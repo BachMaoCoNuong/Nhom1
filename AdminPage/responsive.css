@@ -63,7 +63,9 @@
 }
 /* >= 1024px */
 @media (min-width: 64em){
-    
+    .chat__user{
+        min-height: 495px;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
     .content__chitiet-active .img__chitiet{
